@@ -1,0 +1,45 @@
+/* ====================================================================================
+/* ===================================--|验证提示信息|--========================================
+/* ====================================================================================*/
+.validation {
+    font-size: 12px;
+    color: #999999;
+    display: inline-block;
+    text-indent: 5px;
+    line-height: 25px;
+}
+
+.validate-message {
+    background: url(../img/msg_bg.png) 3px -293px no-repeat;
+    font-size: 12px;
+    color: #999999;
+    display: inline-block;
+    text-indent: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+}
+
+.validate-success {
+    font-size: 12px;
+    color: #999999;
+    display: inline-block;
+    background: url(../img/msg_bg.png) 3px -247px no-repeat;
+    text-indent: 28px;
+    line-height: 25px;
+    margin-left: 5px;
+}
+
+.input-error {
+    background-color: #FFE7E7;
+    box-shadow: none;
+}
+
+.validate-error {
+    font-size: 12px;
+    color: #999999;
+    display: inline-block;
+    background: url(../img/msg_bg.png) 3px -47px no-repeat;
+    text-indent: 28px;
+    margin-left: 5px;
+    line-height: 25px;
+}

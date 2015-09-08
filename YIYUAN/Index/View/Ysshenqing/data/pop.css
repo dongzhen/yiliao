@@ -1,0 +1,798 @@
+@charset "gb2312";
+body{ color:#666666;}
+
+.pop_bg{ position: absolute;top:50%; left:50%; border:6px solid #dad9d9; text-align:left; background:#fff;zoom:1;}
+.pop_bg a{ color:#6d7182;}
+.pop_bg a:hover{ text-decoration:underline; color:#2f81d4;}
+.pop_bg a.name{ color:#2f81d4; text-decoration:underline;}
+.pop_bg a.name:hover{ color:#ff3c00;}
+.pop_bg .red01{ color:#ff0000;}
+
+
+.pop_corner{ position:absolute; width:60%;height:12px; margin:-12px 0; line-height:12px; }
+.pop_corner_red{ position:absolute; width:60%;height:12px; margin:-12px 0; line-height:12px;}
+.pop_video{ position:absolute; width:60%;height:12px; margin:-12px 0; line-height:12px;}
+.tl{ background-position:left top; top:0; left:0;}
+.tr{ background-position:right top; top:0; right:0;}
+.bl{ background-position:left bottom; left:0; margin:0}
+.br{ background-position:right bottom; right:0; margin:0}
+
+
+/*main
+------------------------------------------------------------------------------------------------------------*/
+.pop_text{ overflow:hidden; zoom:1; padding:0 0 25px 0;}
+.pop_video_text{ position:relative; zoom:1; padding:5px 10px;}
+	.pop_text h3{  margin:0 0 20px 0; padding:0 15px; line-height:39px; font-family:Simsun; font-weight:700; border-bottom:1px dotted #dad9d9; font-size:14px;color:#ff6600;}
+	.pop_text h3.yellow{ color:#ff6600; margin:0 0 7px 0;}
+	.pop_text h3.blue{ color:#2f81d4; margin:0 0 7px 0;}
+	.pop_text h3.nomargin{ margin:0 0 7px 0;}
+	.pop_text h2{ margin:0 0 25px 0;padding:0 20px 10px 20px; font-family:ºÚÌå; font-size:18px; color:#ff6600; border-bottom:1px solid #ccc; overflow:hidden;}
+	.pop_text h2.center{ text-align:center; border-bottom:0; margin:0; color:#666;}
+	.pop_text h2.center img{ position:relative; top:5px; margin:0 10px 0 0;}
+	.pop_text .pop_text_right{ clear:both; padding:20px 30px 0; font-size:12px; text-align:right; line-height:22px;}
+	.pop_text_right .blue{ color:#2f81d4; text-decoration:underline;}
+	.pop_text_right .yellow{ color:#ff6600;}
+	.pop_close{ float:right; width:16px; height:16px; margin:10px 0 0; background:url(http://images4.baihe.com/images/baihe_new/images/pop_img/pop_close.gif) no-repeat 0 0; cursor:pointer; overflow:hidden;}
+	.pop_close:hover{ background-position:0 -16px;}
+	.video_close{ position:absolute; right:-20px; top:-20px;}
+	
+
+/*°´Å¥
+------------------------------------------------------------------------------------------------------------*/
+.pop_btn_center{ position:relative; margin:0 auto; float:left; left:50%; }
+.pop_btn{ position:relative;right:50%; float:left;padding:0 0 0 20px; margin:0 5px; _margin:0 0 0 10px; height:34px; background:url(http://images4.baihe.com/images/baihe_new/images/pop_img/pop_btn_left.png) no-repeat 0 0;}
+.pop_btn a{ display:block; float:left; background:url(http://images4.baihe.com/images/baihe_new/images/pop_img/pop_btn_right.png) no-repeat right 0; padding:0 20px 0 0; line-height:34px; font-size:14px; color:#fff; text-decoration:none;}
+.pop_btn a:hover{ color:#fff; text-decoration:underline;}
+
+.pop_btnGray{ position:relative;right:50%; float:left;padding:0 0 0 20px; margin:0 5px; _margin:0 0 0 10px; height:34px; background:url(http://images5.baihe.com/images/baihe_new/images/pop_img/pop_btnGray_left.png) no-repeat 0 0;}
+.pop_btnGray a{ display:block; float:left; background:url(http://images5.baihe.com/images/baihe_new/images/pop_img/pop_btnGray_right.png) no-repeat right 0; padding:0 20px 0 0; line-height:34px; font-size:14px; color:#fff; text-decoration:none;}
+.pop_btnGray a:hover{ color:#fff; text-decoration:underline;}
+
+.pop_btnWhite{ position:relative;right:50%; float:left;padding:0 0 0 20px; margin:0 5px; _margin:0 0 0 10px; height:34px; background:url(http://images5.baihe.com/images/baihe_new/images/pop_img/pop_btnGray01_left.png) no-repeat 0 0;}
+.pop_btnWhite a{ display:block; float:left; background:url(http://images5.baihe.com/images/baihe_new/images/pop_img/pop_btnGray01_right.png) no-repeat right 0;padding:0 20px 0 0; line-height:34px; font-size:14px; color:#666; text-decoration:none;}
+.pop_btnWhite a:hover{ color:#666; text-decoration:underline;}
+
+.pop_btnY45{ position:relative;right:50%; float:left;padding:0 0 0 15px; margin:0 5px; _margin:0 0 0 10px; height:45px; background:url(http://images2.baihe.com/images/baihe_new/images/button/popBtn45_Fl.gif) no-repeat 0 0;}
+.pop_btnY45 a{ display:block; float:left; background:url(http://images3.baihe.com/images/baihe_new/images/button/popBtn45_Fr.gif) no-repeat right 0; padding:0 30px 0 15px; font:20px/45px Î¢ÈíÑÅºÚ; color:#fff; text-decoration:none;}
+.pop_btnY45 a:hover{ color:#fff; text-decoration:underline;}
+
+.pop_btnP45{ position:relative;right:50%; float:left;padding:0 0 0 15px; margin:0 5px; _margin:0 0 0 10px; height:45px; background:url(http://images5.baihe.com/images/baihe_new/images/button/popBtn45_Fl.gif) no-repeat 0 -90px;}
+.pop_btnP45 a{ display:block; float:left; background:url(http://images1.baihe.com/images/baihe_new/images/button/popBtn45_Fr.gif) no-repeat right -90px; padding:0 30px 0 15px; font:20px/45px Î¢ÈíÑÅºÚ; color:#e24040; text-decoration:none;}
+.pop_btnP45 a:hover{ color:#e24040; text-decoration:underline;}
+
+.pop_btn_left .pop_btn{ position:relative; right:0; margin:0 10px 0 0;}
+.pop_btn_left .pop_btnWhite{ position:relative; right:0; margin:0 10px 0 0;}
+
+.pinkBtn40{ float:left; height:40px; padding:0 0 0 5px; margin:0 10px 0 0; background:url(http://images1.baihe.com/images/baihe_new/images/addService/btnFl.gif) no-repeat; overflow:hidden;}
+.pinkBtn40 a{ display:block; float:left; padding:0 30px 0 25px; font:20px/40px Î¢ÈíÑÅºÚ; color:#fff; background:url(http://images1.baihe.com/images/baihe_new/images/addService/btnFr.gif) no-repeat right 0; color:#fff; text-decoration:none;}
+.pinkBtn40 a:hover{ color:#fff; text-decoration:underline;}
+
+/*ÌáÊ¾²¿·Ö
+------------------------------------------------------------------------------------------------------------*/
+.pop_point{ padding:40px 20px; text-align:center; font-weight:700; font-size:14px;line-height:22px; color:#ff6600; overflow:hidden;}
+.pop_point.gray{ color:#666;}
+.pop_point .yellow{ color:#ff6600;}
+.pop_point p{ padding:15px 0 0; text-align:center; color:#666; font:12px normal; line-height:22px;}
+.pop_point_left{ padding:40px; line-height:26px; font-weight:700; font-size:14px; color:#ff6600; overflow:hidden;}
+.pop_error{ padding:2px 5px 0 24px; color:#ff3c00; background:#fff6dc url(http://images1.baihe.com/images/baihe_new/images/icon/mybaihe_icon_014.gif) no-repeat 5px 6px; border:1px solid #ffcb98;}
+.pop_blue{ padding:7px 15px; background:#e9f2f7; border:1px solid #b0cbda;}
+.pop_loading{ padding:15px 20px; text-align:center; font-size:12px; line-height:40px; overflow:hidden;}
+.pop_loading01{ padding:50px 20px; text-align:center; font-size:14px; font-weight:700; line-height:40px; overflow:hidden;}
+.pop_sendmsg{ padding:15px; text-align:center; font-size:12px;}
+.pop_sendmsg strong{ color:#ff6600; font-size:14px;}
+.pop_integrate{ padding:15px; color:#ff6600; font-weight:700; font-size:14px; text-align:center;}
+
+.pop_point.adcont{ padding:20px 0;}
+.pop_point .adlist{ margin:10px 0 0; padding:10px 20px 0; font:12px normal; color:#666; background:#f4f4f4; text-align:left; overflow:hidden; zoom:1;}
+.pop_point .adlist dt{ float:right; width:100px;}
+.pop_point .adlist dd{ line-height:22px;}
+.pop_point .adlist dd input{ position:relative; top:2px; width:20px; margin:0 3px 0 0;}
+.pop_point .adlist dd label{ display:block; margin:0 0 10px 0; color:#333;}
+.pop_point .adlist dd .info{ padding:0 0 0 25px; text-align:left;}
+
+/*Ö÷Ìå²¿·Ö
+------------------------------------------------------------------------------------------------------------*/
+.pop_main{ padding:0 20px 15px 20px; font-size:12px; overflow:hidden; zoom:1;}
+.pop_main.bg{ background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/greetings_bg.gif) repeat-x 0 0;}
+.pop_main a{ color:#2e81d1;}
+.pop_main a:hover{ color:#000; text-decoration:none;}
+.pop_main .greetings{ width:100%; overflow:hidden; zoom:1;}
+.pop_main .greetings dt{ float:left; width:126px; margin:0 30px 0 0; padding:5px 0 0; text-align:center; overflow:hidden;}
+.pop_main .greetings dt .pic{ width:120px; height:150px; padding:2px; border:1px solid #ccc; }
+.pop_main .greetings dt strong{ display:block; margin:10px 0;}
+.pop_main .greetings dd{ padding:5px 0 0; overflow:hidden; zoom:1;}
+.pop_main .greetings dd ul{ padding:15px 10px 10px; border:1px solid #ccc; border-top:3px solid #ff8517; overflow:hidden; zoom:1;}
+.pop_main .greetings dd li{ float:left; width:100%; margin:0 0 10px 0 !important; *margin:0 0 5px 0; color:#858585;}
+.pop_main .greetings dd li input{ vertical-align:middle;}
+.pop_main .greetings .title{ zoom:1;}
+.pop_main .greetings .title:after{content:".";display:block;clear:both;visibility:hidden;height:0;}
+.pop_main .greetings .title span{ display:block; float:left; padding:0 0 0 15px; margin:0 4px 0 0; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_tab_left.gif) no-repeat;}
+.pop_main .greetings .title a{ display:block; float:left; padding:0 15px 0 0; line-height:27px; color:#333; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_tab_right.gif) no-repeat right 0; text-decoration:none;}
+.pop_main .greetings .title span.now{ background-position:0 -27px;}
+.pop_main .greetings .title span.now a{ background-position:right -27px; color:#fff;}
+
+.pop_main .popmsgCont{ padding:15px; border:1px solid #ccc; border-top:3px solid #ff8517;}
+.pop_main .popmsgCont h5{ display:block; margin:0 0 10px 0;}
+.pop_main .popmsgCont h5 span{ color:#999;}
+.pop_main .popmsgCont h5 .fr{ float:right;}
+.pop_main .popmsgCont .tab{ padding:0 0 15px 0; margin:0 0 15px 0; border-bottom:1px dotted #d0d0d0; overflow:hidden; zoom:1;}
+.pop_main .popmsgCont .tab a{ display:block; float:left; height:16px; padding:3px 5px; margin:0 5px 5px 0; border:1px solid #ffe0c6; white-space:nowrap;word-wrap:break-word; word-break:break-all; text-decoration:none; background:#ffe0c6; color:#ff6600;}
+.pop_main .popmsgCont .tab a.current{ border:1px solid #ff6600;}
+.pop_main .popmsgCont .text h5{ display:block; font-weight:700;}
+.pop_main .popmsgCont .text p{ margin:0 0 10px 0; line-height:20px; color:#999;}
+.pop_main .popmsgCont .text input{ position:relative; top:2px; margin:0 3px 0 0;}
+.pop_main .popmsgCont .list{ margin:0 0 15px 0; border:1px solid #f7cdac; overflow:hidden; zoom:1;}
+.pop_main .popmsgCont .list ol li{ margin:0; margin:0 !important; }
+.pop_main .popmsgCont .list ol li{ display:block; padding:7px 10px; border-bottom:1px solid #fff;color:#666; text-decoration:none; overflow:hidden;}
+.pop_main .popmsgCont .list ol li:hover,.pop_main .popmsgCont .list ol li.now{ background:#ffe4cf; border-bottom:1px solid #f7cdac;}
+
+.pop_main .greetCont p{ margin:0 0 3px 0; line-height:24px; color:#8e5630;}
+.pop_main .greetCont p input{ position:relative; top:2px; margin:0 3px 0 0;}
+.pop_main .greetCont .textCont{ position:relative;}
+.pop_main .greetCont textarea{ width:475px; height:115px; padding:5px; margin:0 0 15px 0; border:1px solid #e2be8b; font:12px/22px Simsun; resize:none; overflow-x:hidden; overflow-y:auto;}
+.pop_main .greetCont .link{ display:block; margin:0 0 5px 0; text-align:right; overflow:hidden; zoom:1;}
+.pop_main .greetCont .link a,.pop_main .greetCont .link strong{ color:#ff6600;}
+.pop_main .greetCont .errorIcon{ display:block; float:right; padding:0 0 0 24px; line-height:22px; color:#ff6600; font-weight:700; background:url(http://images1.baihe.com/images/baihe_new/images/icon/regIcon3.gif) no-repeat;}
+.pop_main .greetCont .blank{ display:block; width:485px; height:125px; margin:0 0 15px 0; line-height:125px; background:#e6e6e6; text-align:center; font-weight:700; color:#8e5630;}
+
+.popAsk{ padding:15px 25px; color:#8e5630; line-height:22px; overflow:hidden; zoom:1;}
+.popAsk p strong{ color:#ff6600; font-weight:700;}
+.popAsk .title{ margin:5px 0; overflow:hidden; zoom:1;}
+.popAsk .title a{ display:block; float:right; color:#ff6600;}
+.popAsk textarea{ width:470px; height:115px; padding:5px; font:12px/20px Simsun; border:1px solid #e2be8b; color:#666; overflow-x:hidden; overflow-y:auto; resize:none;}
+	
+
+.pop_memberlist{ width:100%; margin:5px 0 0; overflow:hidden; zoom:1;}
+.pop_memberlist h4{ margin:10px 0; padding:10px 0 10px 35px; font-size:12px; color:#7f7f7f; background:#fff1e6 url(http://images1.baihe.com/images/baihe_new/images/icon/warnIcon.gif) no-repeat 12px 7px; overflow:hidden; zoom:1;}
+.pop_memberlist h4 strong{ color:#ff6600;}
+.pop_memberlist h4.nobg{ background-image:none; padding-left:10px; line-height:26px;}
+.pop_memberlist ul{ width:100%;overflow:hidden; zoom:1;}
+.pop_memberlist li{ float:left; width:86px; margin:0 15px 10px; background:#fff; text-align:center; overflow:hidden; zoom:1;}
+.pop_memberlist li .pic{ display:block; width:80px; height:100px; padding:2px; border:1px solid #ccc; }
+.pop_memberlist li strong{ display:block; height:20px; line-height:20px; margin:5px 0 0; overflow:hidden;}
+.pop_memberlist li p{ display:block; margin:2px 0 0; overflow:hidden;}
+.pop_memberlist li p a{ display:block; margin:0 auto; width:70px; padding:0 0 0 13px; height:26px; line-height:26px; overflow:hidden; background:url(http://images1.baihe.com/images/baihe_new/images/userBtn01.gif) no-repeat 0 -26px; color:#6d7182; text-decoration:none;}
+.pop_memberlist li p a.error1,.pop_memberlist li p a.error2{ background:url(http://images1.baihe.com/images/baihe_new/images/button/errorBtn.gif) no-repeat center 0; text-indent:-999em; overflow:hidden;}
+.pop_memberlist li p a.error2{ background-position:center -26px;}
+	
+	
+	
+.pop_info_cue{ padding:0 20px; font-size:12px; overflow:hidden;}
+	.pop_member_info{ width:100%; overflow:hidden; zoom:1;}
+	.pop_member_info dt{ float:left; width:120px; padding:12px 13px; margin:0 15px 0 0; _margin:0 12px 0 0; background:url(http://images2.baihe.com/images/baihe_new/images/mb_photo_bj01.gif) no-repeat 0 0;}
+	.pop_member_info dt a.name{ display:block; margin:15px 0 0; text-align:center;}
+	.pop_member_info dt span{ display:block; margin:7px 0 0; text-align:center;}
+	.pop_member_info dd{ padding:10px 0 0; line-height:22px; overflow:hidden; zoom:1;}
+	.pop_member_info dd h5{ width:100%; margin:0 0 20px 0; font-size:14px; font-weight:700; color:#ff6600; overflow:hidden; }
+	.pop_member_info dd h5 span{ color:#666;}
+	.pop_member_info dd p{ width:100%; overflow:hidden;}
+	.pop_member_info dd .ps{ display:block; width:100%; padding:10px 0 0; color:#ff6600;}
+	.pop_member_info dd strong{ font-size:14px; font-weight:700; }
+	.pop_info_cue .red{ color:#ff6600;}
+	.pop_member_info dd .btn_norm.fl{ display:inline; margin-left:70px;}
+	.pop_member_info .list{ margin:5px 0 10px 0; line-height:24px; overflow:hidden; zoom1;}
+	.pop_member_info dd h5 .iconbg{ padding:3px; text-align:center; background:url(http://images2.baihe.com/images/baihe_new/images/tribe/icon01.gif) no-repeat 0 0; color:#fff;}
+	
+	.pop_info_cue .mat{ padding:0 0 10px 0; margin:0 0 15px 0; font-family:ºÚÌå; font-size:18px; color:#ff6600; border-bottom:1px solid #ccc;}
+	.pop_info_cue .mat_list{ overflow:hidden; zoom:1;}
+	.pop_info_cue .mat_list li{ margin:0 0 10px 0 ;font-size:14px;}
+	.pop_info_cue .mat_list li label{ float:left;}
+	.pop_info_cue .mat_list .inputbox{ width:300px; padding:2px 5px; border:1px solid #ccc; }
+	.pop_info_cue .mat_list select{ width:312px;}
+	.pop_info_cue .error{ padding:3px 5px 2px 25px; margin:0 0 15px 0; border:1px solid #fea41c; color:#ff0000; background:#fff8bd url(http://images2.baihe.com/images/baihe_new/images/icon/mybaihe_icon_014.gif) no-repeat 5px 5px;}
+	.pop_info_cue .mat_list textarea{ width:300px; height:80px; padding:5px; font-size:12px; border:1px solid #ccc; overflow-x:hidden; overflow-y:auto;}
+
+	
+/****************ÍÆ¼öÀíÓÉ****************/
+	.pop_member_info dd h6{ width:100%; overflow:hidden;}
+	.pop_match{ float:left; width:47%; margin:10px 0 0; overflow:hidden;}
+	.pop_match.fr{ float:right;}
+	.pop_match li{ margin:0 0 5px 0;}
+	.pop_match li span{ float:right;}
+	.pop_member_info .btn{ clear:both; padding:8px 0 0;}
+	
+	
+	
+.pop_blank{ width:100%; padding:70px 0 80px 0; text-align:center; font-size:12px; overflow:hidden; zoom:1;}
+	.pop_blank img{ position:relative; top:3px; margin:0 5px 0 0;}
+.pop_notice{ padding:70px 0 40px 0; text-align:center; font-size:18px; font-family:ºÚÌå; color:#ff6600;overflow:hidden; zoom:1;}
+
+.pop_feedback{ clear:both; padding:50px 30px; text-align:left; font-size:14px; font-weight:700; line-height:26px; overflow:hidden; zoom:1;color:#666;}
+.pop_feedback.red ,.pop_feedback .red{ color:#ff3300;}
+.pop_feedback.green,.pop_feedback .green{ color:#26a907;}
+	
+
+/*approve
+------------------------------------------------------------------------------------------------------------*/
+.pop_approve{ padding:15px 0; font-size:12px; overflow:hidden; zoom:1;}
+	.pop_approve strong{ display:block; padding:0 25px; margin:0 0 10px 0; font-weight:700;}
+	.pop_approve ul{ padding:15px 25px; border:1px dotted #666; border-width:1px 0; overflow:hidden; zoom:1;}
+	.pop_approve ul li{ float:left; width:33%; margin:0 0 10px 0;}
+	.pop_approve ul li input{ position:relative; top:2px; margin:0 3px 0 0;}
+	.pop_approve_file{ padding:0 30px;}
+	.pop_approve_file input{ float:left; padding:3px 0; margin:0 10px 0 0;}
+	
+.pop_approve fieldset{ padding:0 25px; overflow:hidden; zoom:1;}
+.pop_approve fieldset p{ margin:0 0 15px 0; font-weight:700; overflow:hidden; zoom:1;}
+.pop_approve fieldset p label{ display:block; float:left; width:120px; font-weight:normal;}
+.pop_approve fieldset .link{ text-align:right; font-size:14px;}
+.pop_approve fieldset .link a{ color:#ff6600; text-decoration:underline;}
+
+.pop_vshow{ padding:10px 0 25px 20px; font:12px normal; line-height:20px; overflow:hidden; zoom:1;}
+.pop_vshow strong{ display:block; margin:0 0 10px 0; font-weight:700;}
+.pop_vshow .yellow{ font-weight:700; color:#ff6600;}
+.pop_vshow ul li{ display:inline; float:left; margin:0 20px 0 0;}
+.pop_vshow ul li img{ display:block; width:107px; height:80px; padding:4px; border:1px solid #ccc;}
+.pop_vshow .link{ color:#2f81d4; text-decoration:underline;}
+
+.pop_vshow .safePoint{ padding:10px 10px 10px 30px; margin:15px 20px 0 0; line-height:22px; font-size:12px; border:1px solid #ffcb99; background:#fff6db url(http://images3.baihe.com/images/baihe_new/images/icon/mybaihe_icon_014.gif) no-repeat 10px 12px; color:#ff6600;}
+.pop_vshow .safePoint01{  padding:10px 10px 10px 30px; margin:15px 20px 0 0; line-height:22px; font-size:12px; border:1px solid #c2d6e4; background:#f3faff url(http://images3.baihe.com/images/baihe_new/images/icon/mybaihe_icon_046.gif) no-repeat 10px 12px;}
+
+
+/*search
+------------------------------------------------------------------------------------------------------------*/	
+	.pop_search_bottom{padding:15px 20px ; position: relative; left:0px; bottom:-7px; background:url(http://images3.baihe.com/images/baihe_new/images/pop_img/pop_search_bg.gif) repeat-x 0 bottom; z-index:100; font-size:12px;}
+	.pop_search_bottom a{ text-decoration:underline; color:#ff6600;}
+	
+	.pop_search_cont{ width:100%; padding:0 0 10px 0; overflow:hidden; zoom:1;}
+		.pop_search_cont li{ position:relative; padding:0 0 0 30px; margin:0 0 8px 0; line-height:24px; overflow:hidden; zoom:1;}
+		.pop_search_cont li .inputbox{ width:200px; padding:2px 5px; margin:0 10px; border:1px solid #d0d0d0; line-height:16px; font-family:Arial; font-weight:700;}
+		.pop_search_cont li.select{ padding:0 0 0 88px !important; padding:0 0 0 85px;}
+		.pop_search_cont li.select input{ position:relative; top:3px !important; top:2px; margin:0 5px 0 0;}
+		.pop_search_cont b{ font-weight:700; color:#ff6600; }
+		.pop_search_cont p a{ color:#2f81d4; text-decoration:underline;}
+		.pop_search_cont .point{ padding:0 0 0 30px; margin:0 0 10px 0;}
+		.pop_search_cont .btn_norm{ position:absolute; top:0; left:310px;}
+		.pop_search_cont .pop_error{ margin:5px 0 0 70px;}
+		.pop_search_cont .pop_blue{ margin:5px 0 0;}
+		.pop_search_cont .yellow{ color:#ff6600; }
+		.pop_search_cont .point{ padding:0 0 0 125px; color:#ff6600;}
+		.pop_search_cont .success{ font-size:14px; font-weight:700;}
+		.pop_search_cont p{ line-height:24px;}
+		.pop_search_cont p input{ width:150px; padding:1px 5px; margin:0 20px 0 5px; line-height:16px; font-family:Arial; font-weight:700;}
+		.pop_search_cont p strong{ font-weight:700; font-size:20px; color:#ff6600; font-family:Arial, Helvetica, sans-serif;}
+		.pop_search_cont p em{ margin:0 15px; background:#ff6600; padding:3px 60px; color:#fff;}
+		.pop_search_cont .gray{ color:#999;border:none;}
+	
+/*ad
+------------------------------------------------------------------------------------------------------------*/	
+.pop_ad_cont{ font-size:12px; overflow:hidden;}	
+.pop_jf{ font-size:12px; overflow:hidden;}	
+.pop_jf{ height:85px; padding:155px 0 0 220px; background: url(http://images3.baihe.com/images/baihe_new/images/img/pop_ad_04.jpg) no-repeat;}	
+.pop_jf .link{ line-height:50px; color:#2f81d4;}
+.pop_mj{ padding:100px 0 0; background:url(http://images4.baihe.com/images/baihe_new/images/img/pop_ad_05.jpg) no-repeat; overflow:hidden;}
+.pop_mj p{ padding:0 25px 25px;font-weight:700; font-size:14px; color:#ff6600; line-height:24px;}
+
+
+
+/*pop_love_bh
+------------------------------------------------------------------------------------------------------------*/
+	.pop_love_bh{ width:100%; overflow:hidden; zoom:1;}
+		.pop_love_bh dl dt{ float:left; width:160px; overflow:hidden;}
+		.pop_love_bh dl dt.love01{ padding:0 0 0 30px;}
+		.pop_love_bh dl dt.love02{ width:130px; padding:0 0 0 30px;}
+		.pop_love_bh dl dt.love03{ width:130px; padding:0 0 0 30px;}
+		.pop_love_bh dl dd{ padding:30px 25px 0; overflow:hidden; zoom:1;}
+		.pop_love_bh dl dd.fcwr520{ padding:0 25px 0; overflow:hidden; zoom:1;}
+		.pop_love_bh dl dd.fcwr520 .yellow{ color:#ff6600; font-size:14px;}
+		.pop_love_bh strong{ display:block; padding:0 0 15px 0; margin:0 0 10px 0; border-bottom:1px dotted #ccc; font-size:14px; font-weight:700; color:#ff3300; line-height:26px;}
+		.pop_love_bh b{ display:block; padding:15px 7px 0; margin:0 0 10px 0; font-size:14px; font-weight:700; color:#ff3300; line-height:26px;}
+		.pop_love_bh p{ margin:0 0 15px 0; font-size:12px; line-height:20px;}
+		.pop_love_bh p a{ color:#ff6600;}
+		.pop_love_bh p.yellow{ margin:0 0 5px 0; font-weight:700; color:#ff6600;}
+		.pop_love_bh .linkgray{ display:block; float:left; width:100px;  padding:13px 0 0; font-size:12px;}
+		
+/*pop_pay
+------------------------------------------------------------------------------------------------------------*/
+.pop_member_info .pop_pay_title{ padding:0 0 15px 50px; line-height:22px; color:#ff3000; background:url(http://images4.baihe.com/images/baihe_new/images/pay/pop_pay_icon.jpg) no-repeat 0 0;}
+.pop_pay_cont{ width:100%; padding:0 0 10px 0; overflow:hidden; zoom:1;}
+.pop_pay_cont li{ padding:0 0 0 30px; margin:0 0 8px 0; line-height:24px; overflow:hidden; zoom:1;}
+.pop_pay_cont li label{ float:left; width:100px; text-align:right;}
+.pop_pay_cont li input{ width:146px; padding:2px 5px; border:1px solid #d0d0d0;}
+.pop_pay_cont li select{ margin:0 5px 0 0;}
+
+.pop_recomment{ padding:0 30px 15px;font-size:12px;}
+.pop_recomment dl dt{ float:left; width:65px;}
+.pop_recomment dl dd{ padding:15px 0 0; overflow:hidden; zoom:1;}
+.pop_recomment strong{ font-size:14px; font-weight:700;}
+.pop_recomment .link{ text-align:right;line-height:24px;}
+.pop_recomment .link a{ color:#ff6600; }
+
+
+.pop_event{ padding:20px; font-size:14px; overflow:hidden; zoom:1;}
+.pop_event strong{ display:block; width:100%; margin:0 0 10px 0; font-weight:700;}
+.pop_event .text{ clear:both; margin:0 0 15px 0; overflow:hidden; zoom:1;}
+.pop_event input{ float:left; width:290px; padding:2px; margin:0 5px 0 0; border:1px solid #ccc;}
+.pop_event .point{ padding:15px; border:1px solid #ffca7d; background:#fffbec; overflow:hidden;zoom:1;}
+
+.pop_event span{ display:block; float:left; padding:0 10px 0 0; font-weight:700;color:#2f81d4;}
+.pop_event .point a{ display:block; float:left; height:16px; padding:0 0 0 20px; margin:0 12px 0 0; color:#2f81d4; background:url(http://images4.baihe.com/images/baihe_new/images/event/event_share_icon.gif) no-repeat 0 0; text-decoration:none; line-height:18px; overflow:hidden;}
+.pop_event .point a.kaixin{ background-position:0 0;}
+.pop_event .point a.renren{ background-position:0 -16px;}
+.pop_event .point a.douban{ background-position:0 -32px;}
+.pop_event .point a.sina{ background-position:0 -48px;}
+
+/*pop_redbean
+------------------------------------------------------------------------------------------------------------*/
+.pop_redbean{ padding:15px 15px 15px 115px; font:12px normal; background:url(http://images4.baihe.com/images/baihe_new/images/redbean/pop_redbean_bg.jpg) no-repeat; overflow:hidden; zoom:1;}
+.pop_redbean.w{ background-position:0 0;}
+.pop_redbean.m{ background-position:0 -218px;}
+.pop_redbean .title{ display:block; margin:0 0 15px 0; font-weight:700;}
+.pop_redbean ul li{ margin:0 0 10px 0; line-height:27px; font-size:18px; color:#ff6600; font-weight:700; font-family:Arial, Helvetica, sans-serif;}
+.pop_redbean ul li img{ vertical-align:middle; position:relative; top:-2px;}
+.pop_redbean .name{ font:12px normal;}
+.pop_redbean p{ line-height:22px;}
+.pop_redbean_text{ padding:25px 15px 15px; font:12px normal; text-align:center; overflow:hidden; zoom:1;}
+.pop_redbean_text img{ vertical-align:middle;}
+.pop_redbean_text .text{ margin:0 0 15px 0;}
+.pop_redbean_text .btn{ position:relative; height:30px; overflow:hidden; zoom:1;}
+.pop_redbean_text .btn label{ position:absolute; top:3px; right:50px;}
+.pop_redbean_text .btn input{ margin:0 3px 0 0; position:relative; top:2px;}
+
+
+/*****¿´ÐÅÍ¨*****/
+.pop_letter.m1,.pop_letter.m2,.pop_letter.w1,.pop_letter.w2,.pop_letter h5.tj,.pop_text h3 .new,.pop_service,.pop_service .btn01,.pop_load{ background:url(http://images5.baihe.com/images/baihe_new/images/pop_img/pop_letter_bg.jpg) no-repeat;}
+.pop_service ul,.pop_service .tel,.pop_service .mobile{ background:url(http://images5.baihe.com/images/baihe_new/images/pop_img/pop_letter_block.gif) no-repeat;}
+.pop_letter{ padding:15px 15px 15px 154px; font-size:14px; overflow:hidden; zoom:1;}
+.pop_letter.m1{ background-position:0 0;}
+.pop_letter.m2{ background-position:0 -1220px;}
+.pop_letter.w1{ background-position:0 -270px;}
+.pop_letter.w2{ background-position:0 -1590px;}
+.pop_letter .title{ display:block; margin:0 0 10px 0;}
+.pop_letter h5{ padding:0 0 0 25px; margin:0 0 5px 0; font-size:12px; line-height:20px; font-weight:700; }
+.pop_letter h5.tj{ background-position:180px -540px;}
+.pop_letter p{ height:44px;padding:6px 10px; margin:0 0 15px 0; background:#ecf5ff; line-height:22px;}
+.pop_letter .intro,.pop_service .intro{ font-size:12px;}
+.pop_text h3 .new{ width:25px; padding:1px 10px; background-position:0 -560px;}
+.pop_service{ padding:25px 22px 0; font-size:14px; background-position:0 -610px; overflow:hidden; zoom:1;}
+.pop_load{ padding:70px 25px; background-position:0 -920px; text-align:center; line-height:40px;}
+.pop_service ul{ margin:0 0 15px 0;background-position:0 0; overflow:hidden; zoom:1;}
+.pop_service ul.steps{ background-position:0 -90px;}
+.pop_service ul.steps li{ height:97px; padding:10px 0 0; line-height:22px;}
+.pop_service ul li{ float:left;width:138px; height:65px;padding:20px 0 0; margin:0 50px 0 0; text-align:center; line-height:24px; overflow:hidden;}
+.pop_service ul li.nomargin{ margin:0;}
+.pop_service .title{ margin:0 0 10px 0;}
+.pop_service input{ float:left; padding:4px; margin:0 5px 0 0; border:1px solid #c5d4e4;}
+.pop_service .btn01{ display:block; float:left; width:78px; height:27px; margin:0 5px 0 0; text-indent:-999em; background-position:0 -580px; overflow:hidden;}
+.pop_service .red{ font-weight:700; color:#f9005e;}
+.pop_service .blue{ color:#2f81d4;}
+.pop_service .name{ font-size:12px; line-height:24px;}
+.pop_service p{ clear:both; margin:0 0 10px 0; line-height:22px;}
+.pop_service p.right{ text-align:right;}
+.pop_service .tel{ padding:0 0 0 35px; line-height:30px; background-position:0 -197px;}
+.pop_service .mobile{ padding:0 0 0 35px; line-height:30px; background-position:0 -227px;}
+.pop_service .error{ color:#ff0000; font-size:12px;}
+
+/*****ÍÆ¼öºÃÓÑ*****/
+.pop_recommend{ padding:0 10px; font-size:12px; line-height:22px; overflow:hidden; zoom:1;}
+.pop_recommend .title{ padding:0 0 0 65px; margin:0 0 5px 0; line-height:48px; background:url(http://images5.baihe.com/images/baihe_new/images/icon/smile_icon.gif) no-repeat;}
+.pop_recommend .text{ padding:0 10px; margin:0 0 10px 0; overflow:hidden;}
+.pop_recommend .text dt{ float:right;}
+.pop_recommend .yellow{ color:#ff6600;}
+.pop_recommend .form{ padding:15px; background:#fff2e2; overflow:hidden;}
+.pop_recommend .form dl { margin:0 0 10px 0; overflow:hidden; zoom:1;}
+.pop_recommend .form dl dt{ float:left; width:90px; text-align:right; _margin:0 -3px 0 0;}
+.pop_recommend .form dl dd{ overflow:hidden; zoom:1;}
+.pop_recommend .form input{ padding:2px; margin:0 5px 0 0; border:1px solid #ccc;}
+.pop_recommend .form .code{ position:relative; top:-4px; width:100px;}
+.pop_recommend .form a{ position:relative; top:-4px;}
+.pop_recommend .tjlink{ width:445px; padding:2px 5px; line-height:16px; color:#999; border:1px solid #ccc;}
+.pop_recommend .error{ padding:15px 15px 15px 50px; margin:15px 0 0; background:#fffde0 url(http://images5.baihe.com/images/baihe_new/images/pop_img/pop_error.jpg) no-repeat 10px center; border:1px solid #ffe490;}
+
+.pop_test{ padding:20px 20px 0; overflow:hidden; zoom:1;}
+.pop_test dl dt{ float:left; width:80px; margin:0 15px 0 0; _margin:0 12px 0 0;}
+.pop_test dl dd{ font-size:12px; overflow:hidden; zoom:1;}
+.pop_test dl dd p{ margin:0 0 15px 0; line-height:20px;}
+.pop_test .linkgray{ display:block; float:left; width:100px;  padding:13px 0 0; font-size:12px;}
+.pop_test strong{ font-weight:700; color:#ff6600; font-size:14px;}
+
+.pop_proTest{ padding:0 20px; font-size:12px; overflow:hidden; zoom:1;}
+.pop_proTest strong{ color:#ff6600;}
+.pop_proTest h5,.pop_proTest h6{ background: url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_proTest_icon.gif) no-repeat;}
+.pop_proTest h5{ display:block; margin:0 0 25px 0; font:24px/40px Î¢ÈíÑÅºÚ,ºÚÌå; text-align:center; background-position:65px 0; }
+.pop_proTest p{ margin:0 0 10px 0; line-height:22px; overflow:hidden; zoom:1;}
+.pop_proTest p img{ float:left; display:block; margin:0 15px 0 0; border:1px solid #ccc;}
+.pop_proTest .contbg{ padding:15px 35px; margin:0 0 15px 0; background:#f0ebe8; line-height:28px; font-size:14px;overflow:hidden; zoom:1;}
+.pop_proTest .yellow{ font-weight:700; color:#ff6600;}
+.pop_proTest h6{ display:block; padding:0 0 0 25px; margin:0 0 5px 0; color:#ff0000; font-weight:700; background-position:0 -50px;}
+
+.pop_proTest .INFP,.pop_proTest .INFJ,.pop_proTest .ENFJ,.pop_proTest .ENFP{ color:#42a600;}
+.pop_proTest .ENTJ,.pop_proTest .INTJ,.pop_proTest .INTP,.pop_proTest .ENTP{ color:#1068ad;}
+.pop_proTest .ESFP,.pop_proTest .ISTP,.pop_proTest .ESTP,.pop_proTest .ISFP{ color:#cc0018;}
+.pop_proTest .ISFJ,.pop_proTest .ESFJ,.pop_proTest .ISTJ,.pop_proTest .ESTJ{ color:#ff571d;}
+
+.pop_redshow{ padding:0 15px 10px; font-size:12px; overflow:hidden; zoom:1;}
+.pop_redshow ul { padding:0 0 10px 0; border-bottom:1px dotted #ccc; overflow:hidden; zoom:1;}
+.pop_redshow ul li { float:left; padding:0 30px 0 0; margin:0 15px 0 0; background:url(http://images1.baihe.com/images/baihe_new/images/redbean/redbean_arrowicon.gif) no-repeat right 5px;}
+.pop_redshow ul li p{ padding:3px 15px; line-height:22px; background:#ff6600; color:#fff;}
+.pop_redshow ul li strong{ padding:0 5px 0 0; font-size:18px;font-style:italic;}
+.pop_redshow ul li.last{ padding:0; margin:0; background:none;}
+.pop_redshow .textCont{ padding:15px 0 10px 0; line-height:22px; border-bottom:1px dotted #ccc; overflow:hidden; zoom:1;}
+.pop_redshow .textCont strong{ color:#ff6600; font-weight:700;}
+.pop_redshow .textCont p{ margin:0 0 5px 0;}
+.pop_redshow .textCont .error{ padding:2px 10px; margin:0 0 10px 0; border:1px solid #ffdc91; background:#fff7dc; }
+.pop_redshow dl{ margin:0 0 10px 0; overflow:hidden; zoom:1;}
+.pop_redshow dl dt{ float:left; padding:0 5px 0 0;}
+.pop_redshow input{ float:left; width:220px; padding:2px; border:1px solid #ccc;}
+.pop_redshow .point{ padding:10px 0 0; line-height:20px; color:#ff6600;}
+.pop_redshow .stress{ clear:both; padding:5px 15px; font-size:14px; line-height:24px; background:#ffdce3; border:1px solid #f3b4c9;}
+.pop_redshow .stress strong{ font-size:14px; color:#ff0000;}
+
+
+/*****2011×îÐÂÑùÊ½*****/
+.pop_userApp{ font-size:12px; overflow: hidden; zoom:1;}
+.pop_userApp.sp10{ padding-bottom:25px;}
+.pop_userApp h3{  padding:0 15px; line-height:39px; font-family:Simsun; font-size:14px; color:#ff6600;border-bottom:1px dotted #dad9d9; }
+.pop_userApp h3 .redIcon,.pop_userApp h3 .grayIcon{ padding:3px 6px; margin:0 5px; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_title_icon.gif) no-repeat; color:#fff;}
+.pop_userApp h3 .redIcon{ background-position:0 0;}
+.pop_userApp h3 .grayIcon{ background-position:0 -39px;}
+.pop_userApp h3 .gray{ color:#666;}
+.pop_userApp .btn{ padding:15px 0 0 40px; overflow:hidden; zoom:1;}
+.pop_userApp .btn a{ display:block; float:left; padding:4px 10px;}
+.pop_userApp .btn a.fr{ float:right;}
+.pop_userApp .appBtn{ display:block; float:left; padding:4px 10px; margin:0 5px 0 0; line-height:16px; background:#f96400; border:1px solid #d43300; border-top:1px solid #ffa76c; border-right:1px solid #ffa76c; color:#fff; text-decoration:none; white-space:nowrap;} 
+.pop_userApp .appBtn:hover{ color:#fff;}
+
+.pop_userApp .appMain{ overflow:hidden; zoom:1;}
+.appMain.space{ padding:15px;}
+.appMain p{ padding:10px 25px; line-height:22px; border-bottom:1px dotted #ccc; background:#fef5e9;}
+.appMain .btn{ padding:15px 0 15px 220px; border-top:1px dotted #ccc; overflow:hidden; zoom:1;}
+
+.appcont{ height:190px; padding:35px 20px 0 190px; color:#666; background:url(http://images1.baihe.com/images/baihe_new/images/firstImpress/user_pop.jpg) no-repeat; overflow:hidden;}
+.appcont.adbg01{ background-position:0 0;}
+.appcont.adbg02{ background-position:0 -225px;}
+.appcont.adbg03{ background-position:0 -450px;}
+.appcont.adbg04{ background-position:0 -675px;}
+.appcont.adbg05{ background-position:0 -900px;}
+.appcont.adbg06{ background-position:0 -1125px;}
+.appcont.adbg07{ background-position:0 -1350px;}
+.appcont.adbg08{ background-position:0 -1575px;}
+.appcont.adbg09{ background-position:0 -1800px;}
+.appcont.adbg10{ background-position:0 -2025px;}
+.appcont.adbg11{ background-position:0 -2250px;}
+.appcont.adbg12{ background-position:0 -2475px;}
+.appcont.adbg13{ background-position:0 -2700px;}
+.appcont.adbg14{ background-position:0 -2925px;}
+.appcont.adbg15{ background-position:0 -3150px;}
+.appcont.adbg16{ background-position:0 -3375px;}
+.appcont.adbg17{ background-position:0 -3600px;}
+.appcont.adbg18{ background-position:0 -3825px;}
+.appcont.adbg19{ background-position:0 -4050px;}
+.appcont.adbg20{ background-position:0 -4275px;}
+.appcont.adbg21{ background-position:0 -4500px;}
+.appcont.adbg22{ background-position:0 -4725px;}
+.appcont.adbg23{ background-position:0 -4950px;}
+.appcont.adbg24{ background-position:0 -5175px;}
+.appcont.adbg25{ background-position:0 -5400px;}
+.appcont.adbg26{ background-position:0 -5625px;}
+.appcont.adbg27{ background-position:0 -5850px;}
+.appcont.adbg28{ background-position:0 -6075px;}
+.appcont.adbg29{ background-position:0 -6300px;}
+.appcont.adbg30{ background-position:0 -6525px;}
+.appcont.adbg31{ background-position:0 -6750px;}
+.appcont.adbg32{ background-position:0 -6975px;}
+.appcont.adbg33{ background-position:0 -7200px;}
+.appcont.adbg34{ background-position:0 -7425px;}
+
+.appcont.crybg01,.appcont.crybg02,.appcont.crybg03{ height:200px; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_user2011_bg.jpg) no-repeat;}
+.appcont.crybg01{ padding:20px 20px 0 120px; background-position:0 0;}
+.appcont.crybg01 .text{ display:block;font:16px/30px Î¢ÈíÑÅºÚ,ºÚÌå; color:#6c5b53;}
+.appcont.crybg02{ padding:20px 10px 0 220px; background-position:0 -225px;}
+.appcont.crybg02 .text{ display:block;font:14px/30px Î¢ÈíÑÅºÚ,ºÚÌå; color:#666;}
+.appcont.crybg03{ padding:20px 10px 0 60px; background-position:0 -450px; }
+.appcont.crybg03 .text{ display:block; padding:30px 0; font:24px/30px Î¢ÈíÑÅºÚ,ºÚÌå; color:#fff;font-weight:normal;}
+
+.appcont strong{ display:block; padding:0 0 5px 0; margin:0 0 10px 0; font:16px/26px Î¢ÈíÑÅºÚ,ºÚÌå; color:#ff6600; border-bottom:1px dotted #ccc;}
+.appcont p{ line-height:20px;}
+.appcont .prompt{ margin:10px 0 0; padding:7px 0 0; line-height:20px; border-top:1px dotted #ccc;}
+.appcont .prompt b{ display:block; color:#ff6600;}
+
+/*****2011»Æ¿òÌáÊ¾*****/
+.popPoint{ padding:10px; margin:0 0 10px 0; line-height:20px; border:1px solid #f1d8b2; background:#fff6df;}
+
+/*****2011msg*****/
+.popMsg{ margin:0 0 5px 0; line-height:26px; overflow:hidden; zoom:1;}
+.popMsg dl dd{ margin:0 0 10px 0; overflow:hidden; zoom:1;}
+
+.popYellow{ padding:40px 15px; text-align:center; color:#ff6600; line-height:24px; font-weight:700; font-size:14px;}
+.popGray{ padding:40px 15px; line-height:26px; font-size:14px;}
+.popGray.font12{ padding:15px; line-height:22px; font-size:12px;}
+
+/*****2011ÌáÊ¾Ä£°å*****/
+.popTemp{ padding:15px; overflow:hidden; zoom:1;}
+.popTemp .center{ text-align:center;}
+.popTemp .oneLine{ padding:40px 0 30px 0; font-size:14px;}
+.popTemp dl{ overflow:hidden; zoom:1;}
+.popTemp dl dt{ float:left; width:70px;}
+.popTemp dl dd{ padding:10px 0; line-height:22px; font-size:14px;}
+.popTemp .inputbox{ padding:3px; margin:0 5px; border:1px solid #cecece; line-height:16px;}
+
+/*****2011¿´ÐÅÍ¨*****/
+.popLetter{ padding:15px; overflow:hidden; zoom:1;}
+.popLetter .title{ height:65px; padding:0 0 0 70px; background:url(http://images2.baihe.com/images/baihe_new/images/pop_img/pop_letter_01.gif) no-repeat; font:24px/50px Î¢ÈíÑÅºÚ; overflow:hidden;}
+.popLetter .title strong{ color:#ff6600; font-size:26px; font-weight:700;}
+.popLetter .cont{ padding:10px 15px; margin:0 0 10px 0; background:#ffece7; overflow:hidden; zoom:1;}
+.popLetter .cont ul li{ margin:0 0 5px 0; overflow:hidden; zoom:1;}
+.popLetter .cont span{ display:block; float:left; margin:0 15px 0 0; font-size:14px; line-height:26px;}
+.popLetter .list{ overflow:hidden; zoom:1;}
+.popLetter .list dl{ float:left; width:50%;}
+.popLetter .list dl dt{ float:left; width:65px; overflow:hidden;}
+.popLetter .list dl dd{ padding:10px 0; overflow:hidden; zoom:1;}
+.popLetter .list dl dd strong{ display:block; margin:0 0 8px 0; font-weight:700; color:#ef1614; font-size:14px;}
+.popLetter p{ padding:70px 0 10px 50px; font:18px/30px Î¢ÈíÑÅºÚ; color:#333; }
+.popLetter p strong{ font-size:30px; color:#fb0913;}
+.popLetter .btn{ padding-left:190px;}
+
+/*****popWebim*****/
+.popWebim{ padding:15px; line-height:22px; overflow:hidden; zoom:1;}
+.popWebim dl dt{ float:left; width:42px; margin:0 15px 0 0; _margin:0 12px 0 0;}
+.popWebim dl dt img{ padding:1px; border:1px solid #ccc;}
+.popWebim dl dd{ overflow:hidden; zoom:1;}
+.popWebim .cont{ padding:15px; margin:15px 0 0; background:#eef6fd;}
+.popWebim .cont span{ display:block; padding:0 0 0 70px; margin:0 0 10px 0; color:#ff0000;}
+.popWebim .cont ul li{ margin:0 0 7px 0;}
+.popWebim .cont input{ width:250px; padding:2px; margin:0 15px 0 0; border:1px solid #ccc;}
+.popWebim .cont p{ font-size:14px; line-height:24px;}
+.popWebim .cont p strong{ color:#ff6600; font-weight:700;}
+.popWebim .cont p .error{ color:#ff6600; font-weight:normal;}
+.popWebim .cont p a{ color:#ff6600;}
+
+/*****popSend*****/
+.popSend{ padding:15px; line-height:22px; overflow:hidden; zoom:1;}
+.popSend .point{ margin:0 0 15px 0; color:#ff6600}
+.popSend .point img{ position:relative; top:5px;}
+.popSend .cont{ padding:15px; border:1px solid #ccc; overflow:hidden; zoom:1;}
+.popSend .cont strong,.popSend .cont b{ color:#ff6600;}
+.popSend .cont span{ padding:5px; background:#fff6df; border:1px solid #f1d8b2; color:#ff6600;}
+.popSend .cont p{ margin:15px 0 0; overflow:hidden; zoom:1;}
+.popSend .cont p input{ float:left; padding:4px; margin:0 5px 0 0; border:1px solid #ccc;}
+
+
+/*****popTask*****/
+.popTask{ overflow:hidden; zoom:1;}
+.popTask h5{ display:block; margin:0 0 10px 0; font:14px/24px SimSun; font-weight:700;}
+.popTask .list{ overflow:hidden; zoom:1;}
+.popTask .list li{ float:left; width:106px; margin:0 36px 15px 0; background:#fff; text-align:center; overflow:hidden; zoom:1;}
+.popTask .list li{ display:inline;}
+.popTask .list li .pic{ display:block; width:100px; height:120px; padding:2px; border:1px solid #ccc; }
+.popTask .list li strong{ display:block; height:16px; margin:5px 0 0;}
+.popTask .list li p{ display:block; margin:6px 0 0; overflow:hidden;}
+.popTask .list li p a{ display:block; margin:0 auto; width:70px; padding:0 0 0 9px; height:22px; line-height:24px; overflow:hidden; background:url(http://images2.baihe.com/images/baihe_new/images/button_greetings.png) no-repeat 0 0; color:#6d7182; text-decoration:none;}
+
+.popTask .approve_head{ margin:0 0 25px 0; padding:35px 0 0 65px; background:url(http://images2.baihe.com/images/baihe_new/images/pop_img/popTask_bg.jpg) no-repeat; line-height:22px; font-size:14px;}
+.popTask .approve_head img{ position:relative; top:3px;}
+.popTask .point{ color:#333; text-align:center;}
+.popTask .taskForm{ padding:25px 65px 0; font-size:14px; overflow:hidden; zoom:1;}
+.popTask .taskForm dt{ float:left; width:100px; margin:0 0 10px 0; line-height:22px; text-align:right;}
+.popTask .taskForm dd{ padding:0; margin:0 0 10px 0; overflow:hidden; zoom:1;}
+.popTask .taskForm .inputbox{ width:250px; padding:3px; border:1px solid #d0d0d0;}
+.popTask .iconList{ overflow:hidden; zoom:1;}
+.popTask .iconList li{ float:left; width:265px; text-align:center; line-height:20px; overflow:hidden;}
+.popTask .iconList li span{ display:block; width:48px; height:48px; margin:0 auto 10px; text-indent:-999em; background:url(http://images2.baihe.com/images/baihe_new/images/accumulate/accumulate_icon.gif) no-repeat; overflow:hidden;}
+.popTask .iconList li span.pmyx{ background-position:0 0;}
+.popTask .iconList li span.aqzh{ background-position:0 -48px;}
+.popTask .iconList li span.webIm{ background-position:0 -96px;}
+.popTask .iconList li span.vistor{ background-position:0 -144px;}
+.popTask .iconList li span.msg{ background-position:0 -192px;}
+.popTask .iconList li strong{ display:block; color:#0076ac;}
+
+.popTask .taskList{ margin:15px 0 0; overflow:hidden; zoom:1;}
+.popTask .taskList li{ width:400px; margin:0 auto; padding:14px 15px 14px 75px; height:45px; margin-bottom:1px; line-height:45px; font-weight:700; border-bottom:1px dotted #ced8df; background:#e9f2f6 url(http://images3.baihe.com/images/baihe_new/images/realName/realName_icon.gif) no-repeat;}
+.popTask .taskList li.Icon01{ background-position:15px 15px;}
+.popTask .taskList li.Icon02{ background-position:15px -60px;}
+.popTask .taskList li.Icon03{ background-position:15px -137px;}
+.popTask .points{ padding:0 0 0 170px; line-height:22px; background:url(http://images3.baihe.com/images/baihe_new/images/realName/pop_icon01.gif) no-repeat 100px 0;}
+.popTask .points strong{ display:block; margin:0 0 10px 0; font-size:14px; font-weight:700;}
+
+
+.popName{ line-height:24px; overflow:hidden; zoom:1;}
+.popName p { margin:0 0 10px 0;}
+.popName p strong{ color:#ff6600;}
+.popName dl{ margin:0 0 5px 0; overflow:hidden; zoom:1;}
+.popName dl dt{ float:left; width:90px; text-align:right; line-height:24px;}
+.popName dl dd{ padding:0; overflow:hidden; zoom:1;}
+.popName dl dd .error{ display:block; color:#ff0000;}
+.popName dl dd .link{ color:#ff6600; text-decoration:underline; font-size:12px;}
+
+
+/*****Ö§¸¶2012*****/
+.popPay2012{ padding:5px 20px 0; line-height:22px; overflow:hidden; zoom:1;}
+.popPay2012 h2{ display:block; padding:0 0 5px 0; margin:0 0 10px 0; font:14px/24px Simsun; color:#ff6600; font-weight:700; border-bottom:1px dotted #ccc;}
+.popPay2012 p{ margin:0 0 10px 0;}
+.popPay2012 .content{ padding:15px 0; background:#ffecdc; font-size:14px; line-height:30px; overflow:hidden; zoom:1;}
+.popPay2012 .content ul li{ float:left; width:35%; padding:0 15px; border-right:1px dotted #dd9a62;}
+.popPay2012 .content ul li a{ color:#ff6600;}
+.popPay2012 .content ul li b{ padding:0 0 0 20px; background:url(http://images3.baihe.com/images/baihe_new/images/icon/mybaihe_arrow_05.gif) no-repeat;}
+
+
+/*****popPhoto*****/
+.popPhoto{ overflow:hidden; zoom:1;}
+.popPhoto tr td{ padding:8px 2px; border-bottom:1px dotted #ccc; line-height:22px;}
+.popPhoto strong{ display:block; font-size:14px; font-weight:700; color:#ff6600;}
+.popPhoto .listIcon{ padding:1px 5px; margin:0 10px 0 0; color:#fff; background:#ffbf94;}
+.popPIntro{ height:60px; padding:30px 0 0 50px; font:14px/24px Î¢ÈíÑÅºÚ;}
+.popPIntro strong{ color:#ff6600;}
+.btnYellow34 a,.btnYellow34 a:hover{ color:#fff;}
+
+
+/*****2013ÈÏÖ¤*****/
+.popApprove{ overflow:hidden; zoom:1;}
+.popApprove .top{ position:relative; height:56px; padding:12px 30px; border-bottom:1px dotted #ccc; background:url(http://images3.baihe.com/images/baihe_new/images/pop_img/approveTopBg.jpg) repeat-x 0 bottom;}
+.popApprove .top dl dt{ float:left; margin:0 15px 0 0;}
+.popApprove .top dl dt .pic{ display:block; width:36px; height:45px; padding:2px; background:#fff; border:1px solid #e6e6e6;}
+.popApprove .top dl dd{ line-height:24px; overflow:hidden; zoom:1;}
+.popApprove .top dl dd strong{ display:block; font-weight:700;}
+.popApprove .top dl dd h5{ font:16px/24px Î¢ÈíÑÅºÚ; color:#0082cd;}
+.popApprove .top dl dd strong img{ position:relative; top:2px;}
+.popApprove .top dl dd .intro{ font-size:14px;}
+.popApprove .top dl dd .intro .yellow{ color:#ff6600;}
+.popApprove .top .close{ position:absolute; top:10px; right:10px; display:block; width:16px; height:16px; background:url(http://images2.baihe.com/images/baihe_new/images/pop_img/pop_close.gif) no-repeat; text-indent:-999em; overflow:hidden; zoom:1;}
+.popApprove .top .close:hover{ background-position:0 -16px;}
+.popApprove .formList{ padding:20px 30px 0; overflow:hidden; zoom:1;}
+.popApprove .formList dl{ height:50px; overflow:hidden; zoom:1;}
+.popApprove .formList dl dt{ float:left; width:140px; text-align:right; line-height:26px;}
+.popApprove .formList dl dd{ overflow:hidden; zoom:1;}
+.popApprove .formList dl dt strong{ color:#ff6600;}
+.popApprove .formList .inputBox{ float:left; width:279px; padding:5px 3px; border:1px solid #e3e9ef; border-top:1px solid #abadb3; background:#fff; color:#d7d7d7; line-height:16px;}
+.popApprove .formList .inputBox.nowTxt{ color:#666;}
+.popApprove .formList .inputBox.errorBox{ border:1px solid #ff0000;}
+.popApprove .formList .point{ display:block; float:left; padding:0 10px; margin:0 0 0 10px; color:#999; line-height:26px; background:#eeeeee; border:1px solid #e6e6e6; border-right:1px solid #dadada; border-bottom:1px solid #dadada;}
+.popApprove .formList .pointTxt{ clear:both; display:block; height:20px; line-height:20px; color:#999;}
+.popApprove .formList .pointTxt.error{ color:#ff0000;}
+.popApprove .formList .checkBox{ position:relative; top:2px; margin:0 3px 0 0;}
+
+.popApprove .btnCont{ padding:0 0 0 170px; overflow:hidden; zooom:1;}
+.btnSen38{ margin:0;}
+.btnSen38 a,.btnSen38 a:hover{ font-family:Î¢ÈíÑÅºÚ; color:#fff; font-size:18px;text-decoration:none;}
+
+.popApprove .blankList{ height:190px; padding:50px 20px 0 250px; line-height:22px; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/approveBlankBg.jpg) no-repeat;}
+.popApprove .blankList.bg1{ background-position:0 0;}
+.popApprove .blankList.bg2{ background-position:0 -240px;}
+.popApprove .blankList strong{ display:block; padding:0 0 0 30px; margin:0 0 10px 0; color:#ff6600; line-height:24px; font-weight:700; }
+.popApprove .blankList strong.green{background:url(http://images3.baihe.com/images/baihe_new/images/icon/mybaihe_icon_032.gif) no-repeat; color:#26a907;}
+.popApprove .blankList strong.red{background:url(http://images3.baihe.com/images/baihe_new/images/icon/mybaihe_icon_033.gif) no-repeat; color:#ff0000;}
+.popApprove .blankList p{ padding:0 0 0 30px; margin:0 0 10px 0;}
+.popApprove .blankList p a{ display:block; color:#ff6600;}
+.popApprove .blankList p a.link{ display:inline; color:#ff6600;}
+.popApprove .blankList .btn1{ padding:0 0 5px 30px; overflow:hidden;zoom:1;}
+.popApprove .blankList .btn1 .btnYellow34{ margin:0; line-height:34px;}
+
+
+.popMsg2013{ overflow:hidden; zoom:1;}
+.popMsg2013 dl{ padding:10px 0 10px 10px; margin:0 0 12px 0; background:#fff; border:1px solid #f4bf85; overflow:hidden; zoom:1;}
+.popMsg2013 dl dt{ float:left; height:85px; width:80px; margin:0 15px 0 0; background:url(http://images3.baihe.com/images/baihe_new/images/pop_img/popMsg2013_icon.gif) no-repeat;}
+.popMsg2013 dl dt.icon1{ background-position:0 0;}
+.popMsg2013 dl dt.icon2{ background-position:0 -105px;}
+.popMsg2013 dl dt.icon3{ background-position:0 -210px;}
+.popMsg2013 dl dd{ float:left; padding:10px 0 0; line-height:24px; font-size:14px; overflow:hidden; zoom:1;}
+.popMsg2013 dl dd.text1{ width:58%;}
+.popMsg2013 dl dd.text2{ width:22%; padding:20px 0 0;}
+.popMsg2013 dl dd h5{ font:20px/28px Î¢ÈíÑÅºÚ; color:#ff5226;}
+.popMsg2013 dl dd h5 img{ margin-left:5px;}
+.popMsg2013 dl dd h5 span{ padding:1px 5px; margin:0 0 0 5px; font-size:14px; background:#ff6600; color:#fff;}
+.popMsg2013 dl dd strong{ color:#ff3400; font-weight:700;}
+
+
+/*----Ó¡ÕÂ----*/
+.popSeal { overflow:hidden; zoom:1; }
+.popSeal .mTxt { height:80px; padding:80px 0 0 90px; font:16px/32px Î¢ÈíÑÅºÚ; color:#fff; overflow:hidden; zoom:1; }
+.popSeal .mTxt strong { font-weight:bold; font-size:30px; color:#fee678; }
+.popSeal .wTxt { height:80px; padding:80px 0 0 90px; font:16px/32px Î¢ÈíÑÅºÚ; color:#d9ebff; overflow:hidden; zoom:1; }
+.popSeal .wTxt strong { font-weight:bold; font-size:30px; color:#dd1717; }
+.popSeal .iconList { padding:12px 0 0 60px;}
+.popSeal .iconList ul li { position: relative; float:left; width:86px; height:68px; position:relative; overflow:hidden; zoom:1; }
+.popSeal .iconList ul li a{ display:block; width:64px; height:64px;}
+.popSeal .iconList ul li .coverBgM,
+.popSeal .iconList ul li .coverBgW{ position:absolute; top:0; left:0; display:block; width:64px; height:64px; text-indent:-999em; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_seal_m.gif) no-repeat; overflow:hidden; zoom:1;}
+.popSeal .iconList ul li .coverBgW{ background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_seal_w.gif) no-repeat;}
+.popSeal .iconList ul li .checked { display:block; position:absolute; top:47px; left:60px; width:17px; height:13px; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_seal_03.gif) no-repeat; text-indent:-999999px; overflow:hidden; zoom:1;}
+.popSeal .picList { clear:both; padding:0 0 0 117px; font:12px/24px 'ËÎÌå'; color:#333; overflow:hidden; zoom:1;}
+.popSeal .picList dl dt { float:left; width:130px; height:110px; padding:5px 0 0 0; margin:0 0 15px 0; overflow:hidden; zoom:1; position:relative; }
+.popSeal .picList dl dt span { display:block; width:32px; height:32px; overflow:hidden; zoom:1; position:absolute; top:6px; left:22px;}
+.popSeal .picList dl dt .img { display:block; width:80px; height:100px; margin-left:20px; padding:2px; border:1px solid #cbcbcb; }
+.popSeal .picList dl dd { float:left; padding:0 0 10px 50px; width:150px; overflow:hidden; zoom:1;}
+.popSeal .picList dl dd input { position:relative; top:2px; margin-right:5px; _top:1px; _margin-right:3px;}
+.popSeal .icon { padding:0 0 0 245px; overflow:hidden; zoom:1; }
+.popSeal .icon a { display:block; width:144px; height:45px; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/pop_seal_01.gif) no-repeat; font:20px/48px Î¢ÈíÑÅºÚ; text-align:center; text-decoration:none; color:#fff; overflow:hidden; zoom:1;}
+.popSeal .icon a.m { background-position:0 0}
+.popSeal .icon a.w { background-position:0 -45px}
+
+/*****popSkin*****/
+.popSkin{ padding:20px 20px 0; overflow:hidden; zoom:1;}
+.popSkin .point{ padding:10px; margin:0 0 15px 0; background:#fffbf2; border:1px solid #e2be8b; color:#8e5630;}
+.popSkin .point strong{ font-weight:700; color:#ff6600;}
+.popSkin .point a{ color:#ff6600;}
+.popSkin ul{ padding:110px 0 0 0;overflow:hidden; zoom:1;}
+.popSkin ul li{ display:inline;}
+.popSkin ul li a{ position: relative; display:block; float:left; width:80px; height:80px; margin:0 13px 15px 0; border:2px solid #fff; background:#ececec; text-decoration:none;}
+.popSkin ul li a:hover,.popSkin ul li a.current{  border:2px solid #ff6600;  text-decoration:none; cursor:pointer;}
+.popSkin ul li a span{ position:absolute; left:0; bottom:0; display:block; width:80px; color:#fff; line-height:20px;background:#000; text-align:center; opacity:0.7; filter:alpha(opacity=70);}
+
+
+/*****pop2013.css*****/
+.popNewBg{ position: absolute;top:50%; left:50%; border:6px solid #dad9d9; font-size:12px; color:#666; text-align:left; background:#fff ;zoom:1;}
+.popNewBg a{ color:#6d7182;}
+.popNewBg a:hover{ text-decoration:underline; color:#2f81d4;}
+
+
+.popNewBgCont{ padding:15px 0; overflow:hidden; zoom:1;}
+.popNewBgCont .title{ padding:0 0 10px 0; margin:0 15px 15px 15px; font-size:14px; color:#ff6600; border-bottom:1px dotted #dad9d9; overflow:hidden;}
+.popNewBgCont .title .close{ float:right; display:block; width:16px; height:16px; padding:0 5px; background:url(http://images2.baihe.com/images/baihe_new/images/popImg/close.gif) no-repeat center 0; text-indent:-999em; overflow:hidden; zoom:1;}
+.popNewBgCont .popText{ padding:15px;}
+
+
+
+
+/*****popAddS*****/
+.popAddS{ overflow:hidden; zoom:1;}
+.popAddS dl{ padding:10px; margin:0 0 12px 0; border:1px solid #f2ddcf; background:#fffbf2; overflow:hidden; zoom:1;}
+.popAddS dl dt,.AddSLover dl dt,.AddSLover .list strong{background:url(http://images5.baihe.com/images/baihe_new/images/addService/popIcon.gif) no-repeat; }
+.popAddS dl dt,.AddSLover dl dt{ float:left; width:67px; height:67px; margin:0 15px 0 0; background-position:0 0; text-indent:-999em; overflow:hidden;}
+.popAddS dl dt.icon1{ background-position:0 0;}
+.popAddS dl dt.icon2{ background-position:0 -67px;}
+.popAddS dl dd{ position:relative; padding:10px 0; overflow:hidden; zoom:1;}
+.popAddS dl dd strong{ display:block; font:20px/24px Î¢ÈíÑÅºÚ; color:#f67877;}
+.popAddS dl dd p{ padding:10px 0 0;}
+.popAddS dl dd .pinkBtn40{ position:absolute; right:0; top:10px; }
+.popAddS dl dd a,.popAddS dl dd a:hover{color:#fff; text-decoration:none;}
+
+.popAddT{ overflow:hidden; zoom:1;}
+.popAddT dl{ width:350px; padding:15px 15px 15px 50px; margin:0 auto 15px; font-size:14px; border:1px solid #f2ddcf; background:#fffbf2; overflow:hidden;}
+.popAddT dl dd{ margin:0 0 17px 0;}
+.popAddT input{ position:relative; top:2px; margin:0 5px;}
+.popAddT .inputBox1{ width:200px; padding:3px; top:0; border:1px solid #deaa90;}
+.popAddT .pinkBtn40{ display:inline;}
+.popAddT .pinkBtn40{ margin:0 0 0 180px;}
+.popAddT .pinkBtn40 a{ color:#fff;}
+.popAddError,.popAddRight{ display:block; float:left; padding:0 0 0 10px; line-height:40px;}
+.popAddError{ color:#ff0000;}
+.popAddRight{ color:#0a8928;}
+
+.popAddS .point{ padding:15px; margin:0 0 15px 0; text-align:center; font:18px/24px Microsoft yahei; color:#f67877; background:#fffbf2; border:1px solid #f2ddcf;}
+.popAddS .point p{ color:#666;}
+.AddSLover { overflow:hidden; zoom:1;}
+.AddSLover dl{ padding:0 0 10px 0; margin:0 0 15px 0; border-bottom:1px solid #f2ddcf; overflow:hidden;}
+.AddSLover dl dt{ float:left; background-position:0 -134px;}
+.AddSLover .title{ margin:0 0 5px 0; overflow:hidden; zoom:1;}
+.AddSLover .title strong{ display:block; float:left; font:20px/30px Î¢ÈíÑÅºÚ; color:#e74c4c;}
+.AddSLover .title span{ display:block; float:left; padding:0 0 0 12px; background:url(http://images5.baihe.com/images/baihe_new/images/addService/pointFl.gif) no-repeat;}
+.AddSLover .title span em{ display:block; float:left; padding:0 10px 0 0; line-height:30px; color:#e74b4a; font-weight:700; background:url(http://images5.baihe.com/images/baihe_new/images/addService/pointFr.gif) no-repeat right 0;}
+.AddSLover .title a{ float:right; color:#cb0e0e; line-height:30px;}
+.AddSLover dl dd p{ line-height:20px;}
+.AddSLover .list{ position:relative; margin-left:40px; font-size:14px;}
+.AddSLover .list strong{ position:absolute; top:-16px; left:190px; display:block; width:31px; height:18px; background-position:0 -210px;}
+.AddSLover .list span{ color:#e74b4a;}
+.AddSLover .list input{ position:relative; top:2px; margin:0 3px 0 0;}
+.AddSLover .list label{ padding-right:10px;}
+
+
+
+
+
+.popMarried{ padding:15px 15px 0; overflow:hidden; zoom:1;}
+.popMarried .fl{ float:left; width:550px; margin:0 15px 0 0;}
+.popMarried .fr{ float:left; width:445px; overflow:hidden; zoom:1;}
+.popMarried .marriedIntro{ padding:85px 0 0; margin:25px 0 0; background:url(http://images1.baihe.com/images/baihe_new/images/pop_img/marriedAd.png) no-repeat center 0;}
+.popMarried .marriedIntro ul{ padding:15px 30px 15px 80px; margin:0 0 15px 0; background:#fff1f4; overflow:hidden; zoom:1;}
+.popMarried .marriedIntro ul li{ float:left; width:40%; padding:0 22px; line-height:24px; color:#f10e64; background:url(http://images5.baihe.com/images/baihe_new/images/pop_img/marriedIcon1.png) no-repeat 0 2px;}
+.popMarried .marriedIntro ul li strong{ font-size:20px; font-weight:700;}
+.popMarried .sale{ position:relative; padding:15px 12px; margin:0 0 15px 0; background:#fff6d0; border:1px solid #ffc36d; line-height:22px; color:#ff6600; overflow:hidden; zoom:1;}
+.popMarried .sale dl dd{ float:left; width:70%;}
+.popMarried .sale dl dd p{ font:18px/34px Î¢ÈíÑÅºÚ;}
+.popMarried .sale dl dd p strong{ font-size:30px;}
+.popMarried .sale dl dd p del{ padding:0 10px; color:#828282; font-size:14px;}
+.popMarried .sale dl dd .intro{ padding:0 0 0 75px; font-size:14px; color:#cd0b04;}
+.popMarried .sale dl dt{ padding:10px 0 0; overflow:hidden; zoom:1;}
+.popMarried .sale dl dt .btnYellow38 a,.popMarried .sale .btnSms38 a{ color:#fff;}
+.popMarried .sale .red{ color:#ff0000;}
+.popMarried h5{ display:block; margin:0 0 10px 0; padding:0 0 0;overflow:hidden;}
+.popMarried .saleForm{ padding:15px; background:#efefef; overflow:hidden; zoom:1;}
+.popMarried .saleForm p{ margin:0 0 10px 40px; line-height:20px;  color:#ff0000;}
+.popMarried .saleForm dl{ margin:0 0 10px 0;}
+.popMarried .saleForm dl dt{ float:left; width:80px; text-align:right; font-size:14px; line-height:26px; font-weight:700;}
+.popMarried .saleForm dl dd{ overflow:hidden; zoom:1;}
+.popMarried .saleForm dl dd input{ float:left;width:250px; padding:5px; margin:0 10px 0 0; border:1px solid #abadb3; border-bottom:1px solid #e3e9ef; border-left:1px solid #e3e9ef;}
+.popMarried .saleForm dl dd a{ display:block; float:left; color:#0055aa; line-height:24px;}
+.popMarried .saleForm .green{ color:#037e00;}
+.popMarried .saleForm .red{ color:#ff0000;}
+.popMarried .sale .btnSms38{ position:absolute; bottom:15px; right:140px;}

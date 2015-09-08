@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>代理省份列表</title>
+    <hdjs/>
+    <style type="text/css">
+        #duihao{
+            color: green;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        #cuohao{
+            color:red;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        .zuijin{
+            font-size: 20px;
+            color: black;
+            width: 200px;
+            position: absolute;
+            left: 600px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class='menu_list'>
+    <ul>
+        <li>
+            
+        </li>
+    </ul>
+</div>
+<div class='menu_list'>
+    <ul>
+        <li class="zuijin">
+                数据转换测试
+        </li>
+    </ul>
+</div>
+<table class='table2'>
+    <thead>
+    <tr>
+        <!-- <td>卡号</td> -->
+        <td class=''>血压</td>
+        <td class="">卡号</td>
+        <td class=''>时间</td>
+        <td class=''>高压</td> 
+        <td class=''>低压</td>
+        <td class=''>心率</td>       
+    </tr>
+    </thead>
+    <tbody>
+    <list from="$data" name="$d">
+        <tr>
+            <!-- <td style="display:none;">{$d.sid}</td> -->
+            <!-- <td>{$d.kahao}</td> -->
+            <td>{$d.xueya}mmol/L</td>
+            <td>{$d.CardCode}</td>
+            <td>{$d.DataTime}</td>
+            <td>{$d.gaoya}</td>
+            <td>{$d.diya}</td>
+            <td>{$d.xinlv}</td>
+        </tr>
+    </list>
+    </tbody>
+</table>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/js.js"></script>
+<div class='page1'>
+   {$page}
+</div>
+</body>
+</html>

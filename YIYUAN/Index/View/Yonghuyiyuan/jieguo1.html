@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>保健医生申请</title>
+    <hdjs/>
+    <style type="text/css">
+            #top{
+            height: 30px;
+            width: 100%;
+            background: #67A331;
+        }
+        .top_center{
+            width: 1500px;
+            height: 30px;
+            margin: 0 auto;
+            /*background: yellow;*/
+        }
+        .huanying{
+            width: 300px;
+            height: 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "微软雅黑";
+            text-align: center;
+            float: left;
+            /*background: green;*/
+        }
+        .tuichu{
+            float: right;
+            height: 28px;
+            width: 128px;
+            color: white;
+            border: 2px solid white;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            text-align: center;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            cursor: pointer;
+            /*background: yellow;*/
+        }
+        /*导航块开始*/
+        #daohang{
+            width: 1583px;
+            height: 80px;
+            border: 1px solid #E6E6E6;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            margin: 0 auto;
+            margin-top: 20px;
+            /*border: 1px solid red;*/
+        }
+        .d_center{
+            width: 1280px;
+            height: 80px;
+            margin: 0 auto;
+            /*background: green;*/
+            position: relative;
+
+        }
+        .logo{
+            width: 180px;
+            height: 80px;
+            position: absolute;
+            top: -10px;
+
+        }
+        .dianhua{
+            width: 1100px;
+            height: 40px;
+            position: absolute;
+            left: 180px;
+            top: 0;
+            /*background:yellow;*/
+            /*border: 1px solid red;*/
+        }
+        .tubiao{
+            /*background: yellow;*/
+            position: absolute;
+            top: -10px;
+        }
+        .dh{
+            width: 400px;
+            height: 40px;
+            /*background: green;*/
+            left: 700px;
+            position: absolute;
+        }
+        .nb{
+            width: 350px;
+            height: 40px;
+            position: absolute;
+            left: 670px;
+            color: #67A331;
+            font-size: 25px;
+            font-family: "微软雅黑";
+            font-weight: 600;
+            text-align: center;
+            line-height: 40px;
+
+        }
+        .fuwu{
+            width: 1100px;
+            height: 40px;
+            position: absolute;
+            left: 180px;
+            top: 40px;
+            line-height: 10px;
+            /*border: 1px solid red;*/
+            /*background: yellow;*/
+        }
+        .fw{
+            list-style: none;
+            position: absolute;
+            width: 600px;
+            height: 40px;
+            left: 650px;
+
+        }
+        .fw a{
+            text-decoration: none; 
+            font-size: 18px;
+            font-family: "微软雅黑"; 
+            color: #423232;          
+        }
+        .fw a:hover{
+            color: red;
+        }
+        .fw li{
+            float: left;
+            margin-left: 20px;
+
+        }
+        #duihao{
+            color: green;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        #cuohao{
+            color:red;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        #anniu{
+            background: #67A331;
+        }
+    </style>
+    <js file="__CONTROLLER_VIEW__/Js/js.js"/>
+    <script src="__CONTROLLER_VIEW__/js/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="__CONTROLLER_VIEW__/js/Area.js" type="text/javascript"></script>
+<script src="__CONTROLLER_VIEW__/js/AreaData_min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function (){
+    initComplexArea('seachprov', 'seachcity', 'seachdistrict', area_array, sub_array, '44', '0', '0');
+});
+
+//得到地区码
+function getAreaID(){
+    var area = 0;          
+    if($("#seachdistrict").val() != "0"){
+        area = $("#seachdistrict").val();                
+    }else if ($("#seachcity").val() != "0"){
+        area = $("#seachcity").val();
+    }else{
+        area = $("#seachprov").val();
+    }
+    return area;
+}
+
+function showAreaID() {
+    //地区码
+    var areaID = getAreaID();
+    //地区名
+    var areaName = getAreaNamebyID(areaID) ;
+    alert("您选择的地区码：" + areaID + "      地区名：" + areaName);            
+}
+
+//根据地区码查询地区名
+function getAreaNamebyID(areaID){
+    var areaName = "";
+    if(areaID.length == 2){
+        areaName = area_array[areaID];
+    }else if(areaID.length == 4){
+        var index1 = areaID.substring(0, 2);
+        areaName = area_array[index1] + " " + sub_array[index1][areaID];
+    }else if(areaID.length == 6){
+        var index1 = areaID.substring(0, 2);
+        var index2 = areaID.substring(0, 4);
+        areaName = area_array[index1] + " " + sub_array[index1][index2] + " " + sub_arr[index2][areaID];
+    }
+    return areaName;
+}
+</script>
+</head>
+<body>
+ <!-- 头部开始 -->
+        <div id="top">
+            <div class="top_center">
+                <span class="huanying">欢迎您</span>
+                <span class="tuichu"><a href="{|U:'Login/out'}">安全退出</a></span>
+            </div>
+        </div>
+    <!-- 导航块开始 -->
+        <div id="daohang">
+            <div class="d_center">
+                <div class="logo"> 
+                    <img src="image/22.jpg">               
+                </div>
+                <div class="dianhua">
+                    <span class="dh">
+                        <p class="tubiao"><img src="image/dianhua.png"></p>
+                    </span>
+                    <span class="nb">
+                        888888888888
+                    </span>
+                </div>
+                <div class="fuwu">
+                    <ul class="fw">
+                        <li><a href="">首页</a></li>
+                        <li><a href="{|U:'Yonghu/shenqing'}">申请保健医生</a></li>
+                        <li><a href="">申请保健医院</a></li>
+                        <li><a href="">健康信息反馈</a></li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+<div class='menu_list'>
+    <ul>
+<!--         <li>
+            <a href="{|U:'add'}">添加保健医生</a>
+        </li>
+        <li>
+            <a href="{|U:'chakan'}">查看保健医生</a>
+        </li> -->
+    </ul>
+</div>
+
+            <div class='title-header' class="h100" id="anniu">查找条件</div>
+            <table class='table1 hd-form'>
+
+                <tr>
+                    <th>省份</th>
+                    <form action="" method='post'>
+                    <td>
+                    
+                        省：<select id="seachprov" name="shengname" onChange="changeComplexProvince(this.value, sub_array, 'seachcity', 'seachdistrict');"></select>
+                        市：<select id="seachcity" name="shiname" onChange="changeCity(this.value,'seachdistrict','seachdistrict');"></select>
+
+                        区：<span id="seachdistrict_div"><select id="seachdistrict" name="quname"></select>
+                        
+                    </td>
+                    <td>
+                     <input type="submit" class='hd-success' value='查找' id="anniu"/>                       
+                    </td>
+
+                    <form/>
+
+                </tr>             
+            </table>
+
+<table class='table2'>
+    <thead>
+    <tr>
+        <td class=''>医生姓名</td>
+        <td class="">所属科室</td>
+        <td class=''>联系电话</td>
+        <td class="">所属医院</td>
+        <td class="">操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <list from="$ys" name="$y">
+        <tr>
+            <td style="display:none;">{$y.uid}</td>
+            <td>{$y.yishengname}</td>
+            <td>{$y.keshi}</td>
+            <td>{$y.yishengnumber}</td>
+            <td>{$y.yiyuanname}</td>
+            <td>
+                <a href="{|U:'cunru',array('uid'=>$y['uid'])}" onclick="return confirm('你确定申请该医生为保健医生么?');">申请为保健医生</a>  |
+                <a href="{|U:'kan',array('uid'=>$y['uid'])}">查看其从医资料</a> 
+            </td>
+        </tr>
+    </list>
+    </tbody>
+</table>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/js.js"></script>
+<div class='page1'>
+   {$page}
+</div>
+</body>
+</html>

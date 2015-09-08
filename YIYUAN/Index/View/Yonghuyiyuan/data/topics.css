@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****专题头****/
+#topicsHead { width:100%; height:60px; font-family:'宋体'; font-size:12px; color:#C8C8C8; line-height:60px; background:url(http://images1.baihe.com/images/crystal_img/img/topicsHead_bj.jpg) repeat-x;}
+#topicsHead a { color:#666; text-decoration:none;}
+#topicsHead a:hover { color:#F60; text-decoration:underline;}
+#topicsHead dl { width:980px; margin:0 auto;}
+#topicsHead dl dt { float:left; width:115px; height:60px; color:#666; text-align:right; overflow:hidden; zoom:1;}
+#topicsHead dl dt span { color:#C8C8C8;}
+#topicsHead dl dd { float:left; width:710px; text-align:center; }
+#topicsHead dl dd a { font-weight:bold; }
+
+/****专题尾****/
+#topicsFooter { width:980px; height:90px; margin:0 auto; padding-top:20px; font-size:12px; color:#666; text-align:center }
+
+
+/*--------新版导航样式--------*/
+
+body{ font-size:12px; font-family:Arial,SimSun; background:#fff; color:#666;}
+/*****New2013*****/
+.bhHeaderNew .menu ul li.down,.bhHeaderNew .menu ul li.current a{ background:url(http://images5.baihe.com/images/baihe_new/images/mybaihe_v1/menuPoint.png) no-repeat;}
+.bhHeaderNew .headerApp ul li span,.searchContNew ul,.searchContNew .searchBtn,.bhUserMsg .flMsg ul li a,.bhUserMsg .flMsg ul li a span,.menuCont .more a,.bhTitle .signBtn a.bestIcon{ background:url(http://images5.baihe.com/images/baihe_new/images/mybaihe_v1/userSprits.png) no-repeat;}
+
+/*****newHeader*****/
+.bhHeaderNew{ width:100%; height:51px; background:#3a3a49; border-bottom:3px solid #ff6600; zoom:1; z-index:999;}
+.bhHeaderNew:after{content:".";display:block;clear:both;visibility:hidden;height:0;}
+.bhHeaderNew.sticky{ position:fixed; top: 0px; /* position fixed for IE6 */  _position: absolute;  _top: expression(documentElement.scrollTop + "px"); z-index:999; left:0;}
+.bhHeaderNew .headerC{ position:relative; z-index:99; width:980px; margin:0 auto; zoom:1;}
+.bhHeaderNew .headerC:after{content:".";display:block;clear:both;visibility:hidden;height:0;}
+.bhHeaderNew .headerC h1 a{ display:block; float:left; width:190px; height:51px; background:url(http://images5.baihe.com/images/baihe_new/images/mybaihe_v1/logo.png) no-repeat;  text-indent:-999em; overflow:hidden; zoom:1;}
+.bhHeaderNew .menu{ float:left; width:630px; padding:18px 0 0;zoom:1;}
+.bhHeaderNew .menu:after{content:".";display:block;clear:both;visibility:hidden;height:0;}
+.bhHeaderNew .menu ul li{ position:relative; float:left; padding:0 7px 0 5px; background:url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/menuLine.png) no-repeat right center;}
+.bhHeaderNew .menu ul li a{ display:block; float:left; padding:0 8px; font:16px/20px Microsoft YaHei; color:#fff; text-decoration:none;}
+.bhHeaderNew .menu ul li a.now{ padding:0 0 0 2px; background:url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/menuflBg.png) no-repeat;}
+.bhHeaderNew .menu ul li a.now span{ display:block; float:left; padding:0 8px 0 6px; background:url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/menufrBg.png) no-repeat right 0; cursor:pointer;}
+.bhHeaderNew .menu ul li.last{ background:none;}
+.bhHeaderNew .menu ul li .telIcon{ position:absolute; top:-15px; left:30px; display:block; width:82px; height:17px; background:url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/serviceTel.gif) no-repeat; text-indent:-999em; overflow:hidden; zoom:1;}
+.bhHeaderNew .menu ul li .newIcon{ position:absolute; top:-12px; left:60px; display:block; width:26px; height:18px; overflow:hidden;}
+.bhHeaderNew .menu ul li .newHot { position:absolute; top:-12px; left:43px; display:block; width:26px; height:18px; overflow:hidden;}
+.bhHeaderNew .menu ul li.down{ background-position:right 1px;}
+.bhHeaderNew .menu ul li.current{ position:relative;}
+.bhHeaderNew .menu ul li.current a{ background-position:0 -20px; }
+.bhHeaderNew .menu ul li dl{ position:absolute; top:20px; left:5px; width:118px;padding:16px 0 10px 0; background:#292934 url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/menuPointArrow.png) no-repeat 20px 0;zoom:1; z-index:9;}
+.bhHeaderNew .menu ul li dl dd{ position:relative; zoom:1;}
+.bhHeaderNew .menu ul li dl dd a{ float:none; display:block; width:102px; text-align:center;  font:14px/28px Simsun; }
+.bhHeaderNew .menu ul li dl dd a img{ position:absolute; top:0; right:2px;}
+.bhHeaderNew .menu ul li dl.lev3{ position:absolute; left:118px; bottom:0; top:auto; width:118px; padding-top:0; background-image:none; background:#f4692b; overflow:hidden; zoom:1;}
+.bhHeaderNew .menu ul li.current dl dd a{ background-image:none;}
+.bhHeaderNew .menu ul li dl dd.serverIcon,.bhHeaderNew .menu ul li dl dd.moreIcon{ background:#292934 url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/menuPoint.png) no-repeat right -40px;}
+.bhHeaderNew .menu ul li dl dd.serverIcon a:hover,
+.bhHeaderNew .menu ul li dl dd.moreIcon a:hover,
+.bhHeaderNew .menu ul li dl dd.serverIcon .active,
+.bhHeaderNew .menu ul li dl dd.moreIcon .active{ background:#f4692b url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/menuPoint.png) no-repeat right -68px;}
+.bhHeaderNew .menu ul li dl dd a:hover,.bhHeaderNew .menu ul li dl dd a.active{ background:#f4692b;}
+.bhHeaderNew .menu ul li dl.lev3 dd a:hover{ background:#3a3a49;}
+
+.bhHeaderNew .headerApp{ float:right; width:150px; padding:10px 0 0; zoom:1;}
+.bhHeaderNew .headerApp ul li{ position:relative; width:32px; height:32px; float:left;margin:0 0 0 18px; }
+.bhHeaderNew .headerApp ul li{ display:inline;}
+.bhHeaderNew .headerApp ul li strong{ position:absolute; top:-14px;}
+.bhHeaderNew .headerApp ul li span{ display:block;width:32px; height:32px; text-indent:-999em; overflow:hidden; cursor:pointer;}
+.bhHeaderNew .headerApp ul li .Imobile{ background-position:0 0;}
+.bhHeaderNew .headerApp ul li .Iemail{ background-position:0 -32px;}
+.bhHeaderNew .headerApp ul li .Ifun{ background-position:0 -64px;}
+.bhHeaderNew .headerApp ul li .Imobile:hover,.bhHeaderNew .headerApp ul li .now1{ background-position:-32px 0;}
+.bhHeaderNew .headerApp ul li .Iemail:hover,.bhHeaderNew .headerApp ul li .now2{ background-position:-32px -32px;}
+.bhHeaderNew .headerApp ul li .Ifun:hover,.bhHeaderNew .headerApp ul li .now3{ background-position:-32px -64px;}
+.bhHeaderNew .headerApp ul li dl{ position:absolute; top:28px; right:4px; width:118px;padding:15px 0 10px 0; background:#292934; overflow:hidden; zoom:1; z-index:9;}
+.bhHeaderNew .headerApp ul li dl dd{ overflow:hidden; zoom:1;}
+.bhHeaderNew .headerApp ul li dl dd a{ display:block; width:103px; padding:0 0 0 15px; font:14px/28px Simsun; color:#fff; text-decoration:none;}
+.bhHeaderNew .headerApp ul li dl.leftText dd a{ display:block; width:88px; padding:0 0 0 30px;}
+.bhHeaderNew .headerApp ul li dl dd a:hover{ background:#f4692b;}
+.bhHeaderNew .headerFrp{ float:right; width:160px; padding:5px 0 0; text-align:right; font-size:12px; color:#c1c1c1; zoom:1;}
+.bhHeaderNew .headerFrp strong{ padding:0 5px 0 0;}
+.bhHeaderNew .headerFrp p{ padding:5px 0 0; color:#c1c1c1;}
+.bhHeaderNew .headerFrp p a{ padding:0 5px; color:#fff; text-decoration:none;}
+.bhHeaderNew .headerFrp p a:hover{ color:#ff6600;}
+
+/*----新版下拉菜单-----------------------------------*/
+.bhHeaderNew .menuXlcd { position:absolute; top:33px; right:-40px; width:118px; overflow:hidden; zoom:1;}
+.bhHeaderNew .menuXlcd .arrowT { width:13px; height:6px; background:url(http://images1.baihe.com/images/baiheNew/mybaihe/xlcd_top.gif) no-repeat; overflow:hidden; zoom:1; }
+.bhHeaderNew .menuXlcd .menuXC { width:118px; padding:4px 0; background:url(http://images1.baihe.com/images/baiheNew/mybaihe/xlcd_cont.gif) no-repeat right top; overflow:hidden; zoom:1; }
+.bhHeaderNew .menuXlcd .pLeft { padding-left:54px;}
+.bhHeaderNew .menuXlcd .menuXC a { position:relative; display:block; height:33px; text-align:center; color:#333; line-height:31px; text-decoration:none; margin-top:-1px; overflow:hidden; zoom:1; }
+.bhHeaderNew .menuXlcd .menuXC a div { position:absolute; bottom:0px; left:50%; width:84px; height:1px; margin-left:-42px; background:#f4f4f4; line-height:-1px; overflow:hidden; zoom:;1}
+.bhHeaderNew .menuXlcd .menuXC a:hover { background:#f4f4f4; }
+.bhHeaderNew .menuXlcd .copy { width:118px; height:2px; background:url(http://images1.baihe.com/images/baiheNew/mybaihe/xlcd_copy.gif) repeat-y; overflow:hidden; zoom:1; }
+.bhHeaderNew .menuXlcd em { color:#f34340}
+
+
+
+.bhHeaderNew .headerApp .point{ position:absolute; right:0; top:54px; width:223px; height:86px; padding:15px 10px 0; font-size:12px; background:url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/headerPoint.png) no-repeat; z-index:99; overflow:hidden;zoom:1;}
+.bhHeaderNew .headerApp .point #scrollPoint{ position:relative; height:58px; overflow:hidden; zoom:1;}
+.bhHeaderNew .headerApp .point ol{ height:52px; overflow:hidden; zoom:1;}
+.bhHeaderNew .headerApp .point .close{ position:absolute; top:0; right:0; display:block; width:25px; height:25px; text-indent:-999em; overflow:hidden; zoom:1;}
+.bhHeaderNew .headerApp .point dl { margin:0 0 12px 0; overflow:hidden; zoom:1;}
+.bhHeaderNew .headerApp .point dl dt{ float:left; width:40px; height:49px; margin:0 10px 0 0;}
+.bhHeaderNew .headerApp .point dl dt img{ display:block; border:2px solid #fff;}
+.bhHeaderNew .headerApp .point dl dd{ position:relative; padding:10px 0 0; color:#fff; overflow:hidden; zoom:1;}
+.bhHeaderNew .headerApp .point dl dd h5{ display:block; font:bold 14px/22px simsun;}
+.bhHeaderNew .headerApp .point dl dd h5 strong{ color:#fcff00; font-weight:700;}
+.bhHeaderNew .headerApp .point dl dd .linkP{ position:absolute; top:20px; right:15px; display:block; padding:2px 6px; text-decoration:none; background:#fff; color:#ff6600;}
+.bhHeaderNew .headerApp .point p{ line-height:20px; color:#fff;}
+.bhHeaderNew .headerApp .point p strong{ display:inline-block; padding:0 3px; width:13px; text-align:center; color:#ff6600; font-weight:700; background:url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/headerPoint1.png) no-repeat center;}
+.bhHeaderNew .headerApp .point p a{ color:#fff;}
+
+.bhHeaderNew .headerApp .pointAdv { position:absolute; right:0; top:54px; width:232px; height:106px; padding:0px; z-index:99; overflow:hidden;zoom:1;}
+.bhHeaderNew .headerApp .pointAdv a.close { position:absolute; top:7px; right:10px; display:block; width:11px; height:10px; text-indent:-9999px; overflow:hidden; zoom:1; }
+.bhHeaderNew .headerApp .adv_LuckDraw,.bhHeaderNew .headerApp .adv  { position:relative; width:172px; height:50px; padding:56px 0 0 60px; background:url(http://images2.baihe.com/images/baihe_new/images/mybaihe_v1/adv_20140829.png) no-repeat; overflow:hidden; zoom:1; }
+.bhHeaderNew .headerApp .adv_LuckDraw a { display:block; width:110px; height:30px; text-indent:-99999px; overflow:hidden; zoom:1; }
+.bhHeaderNew .headerApp .adv { position:relative; width:170px; height:38px; padding:68px 0 0 62px; overflow:hidden; zoom:1; }
+.bhHeaderNew .headerApp .adv a { display:block; width:104px; height:27px; text-indent:-9999px; overflow:hidden; zoom:1; }
+.bhHeaderNew .headerApp .bj01 { background-position:0 -106px}
+.bhHeaderNew .headerApp .bj02 { background-position:0 -212px; }
+.bhHeaderNew .headerApp .bj03 { background-position:0 -318px; }
+.bhHeaderNew .headerApp .bj04 { background-position:0 -424px; }
+.bhHeaderNew .headerApp .bj05 { background-position:0 -530px; }
+.bhHeaderNew .headerApp .bj06 { background-position:0 -636px; }
+.bhHeaderNew .headerApp .bj07 { background-position:0 -742px; }
+.bhHeaderNew .headerApp .bj08 { background-position:0 -848px; }
+
+/******bhHeaderNew*****/
+.bhHeaderNew.white{ background:#fff;}
+.bhHeaderNew.white .headerC h1 a{ background:url(http://images4.baihe.com/images/baihe_new/images/mybaihe_v1/logoW.png) no-repeat; }
+.bhHeaderNew.white .menu ul li{ float:left; padding:0 7px 0 5px; background:url(http://images4.baihe.com/images/baihe_new/images/mybaihe_v1/menuLineW.png) no-repeat right center;}
+.bhHeaderNew.white .menu ul li a{ color:#727171; background:none;}
+.bhHeaderNew.white .menu ul li a.now span{ color:#ff6600; background:none;}
+.bhHeaderNew.white .menu ul li a.now{ background:none;}
+.bhHeaderNew.white .menu ul li.last{ background:none;}
+.bhHeaderNew.white .menu ul li.down{ background:url(http://images5.baihe.com/images/baihe_new/images/mybaihe_v1/menuPointW.png) no-repeat right 1px;}
+.bhHeaderNew.white .menu ul li.current a{ color:#fff;  background:url(http://images5.baihe.com/images/baihe_new/images/mybaihe_v1/menuPoint.png) no-repeat 0 -20px;}
+.bhHeaderNew.white .menu ul li.current dl dd a{ background-image:none;}
+.bhHeaderNew.white .menu ul li dl dd.serverIcon a:hover,
+.bhHeaderNew.white .menu ul li dl dd.moreIcon a:hover,
+.bhHeaderNew.white .menu ul li dl dd.serverIcon .active,
+.bhHeaderNew.white .menu ul li dl dd.moreIcon .active{ background:#f4692b url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/menuPoint.png) no-repeat right -68px;}
+.bhHeaderNew.white .menu ul li dl dd a:hover{ background:#f4692b;}
+.bhHeaderNew.white .menu ul li dl dd a img{ position:absolute; top:0; right:2px;}
+.bhHeaderNew.white .menu ul li dl.lev3 dd a:hover{ background:#3a3a49;}
+.bhHeaderNew.white .headerApp ul li .Imobile{ background-position:0 -535px;}
+.bhHeaderNew.white .headerApp ul li .Iemail{ background-position:0 -567px;}
+.bhHeaderNew.white .headerApp ul li .Ifun{ background-position:0 -599px;}
+.bhHeaderNew.white .headerApp ul li .Imobile:hover,.bhHeaderNew.white .headerApp ul li .now1{ background-position:-32px -535px;}
+.bhHeaderNew.white .headerApp ul li .Iemail:hover,.bhHeaderNew.white .headerApp ul li .now2{ background-position:-32px -567px;}
+.bhHeaderNew.white .headerApp ul li .Ifun:hover,.bhHeaderNew.white .headerApp ul li .now3{ background-position:-32px -599px;}
+.bhHeaderNew.white .headerFrp{ color:#b0b0b6;}
+.bhHeaderNew.white .headerFrp p{ padding:5px 0 0; color:#d1d1d5;}
+.bhHeaderNew.white .headerFrp p a{ color:#3a3a49;}
+.bhHeaderNew.white .headerApp ul li dl dd a{ display:block; width:103px; padding:0 0 0 15px; font:14px/28px Simsun; color:#fff; text-decoration:none;}
+.bhHeaderNew.white .headerApp ul li dl.leftText dd a{ display:block; width:88px; padding:0 0 0 30px;}
+
+
+
+/*****bhSearch*****/
+.bhSearchNew{ padding:13px 0;}
+.searchContNew{ width:980px; margin:0 auto; height:24px; line-height:24px;}
+.searchContNew ul{ width:950px; padding:0 0 0 30px; background-position:-80px 0; overflow:hidden; zoom:1;}
+.searchContNew ul li{ float: left; padding:0 13px 0 0;color:#8e5630; font-size:14px; overflow:hidden; zoom:1;}
+.searchContNew select{ margin:0 5px 0 0; height:20px; font-size:14px; font-family:Verdana, Geneva, sans-serif;}
+.searchContNew input{ position:relative; top:2px; _top:1px; margin:0 3px 0 0; _margin:0;}
+.searchContNew .searchBtn{ display:block; width:60px; height:24px; line-height:24px; background-position:-100px -96px; text-align:center; text-decoration:none; overflow:hidden;}
+.searchContNew .link{ width:275px; padding:0; line-height:22px; font-size:12px;}
+.searchContNew .link a{ padding:0 10px; background:url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/searchLine.gif) no-repeat right center;white-space:nowrap; text-decoration:none;}
+.searchContNew .link a:hover{ color:#ff6600; text-decoration:underline;}
+.searchContNew .link a.last{ padding-right:0; background:none;}
+
+
+
+/*-----左侧菜单栏-----*/
+
+
+/*****subNav*****/
+.subNav{ width:128px;overflow:hidden; zoom:1;}
+.subNav .pic{ padding:15px 0; text-align:center; background:#fff;}
+.subNav .pic .upload{ position:relative; display:block; width:80px; height:100px; margin:0 auto; text-decoration:none;}
+.subNav .pic .upload span{ position:absolute; left:0; bottom:0; display:block; width:80px; background:#000; line-height:20px; filter:alpha(opacity=70); -moz-opacity:0.7; opacity:0.7; color:#fff; text-align:center; }
+.subNav .pic .link{ width:80px; padding:10px 0 0; margin:0 auto; overflow:hidden; zoom:1;}
+.subNav .pic .link .lYellow{ display:block; float:left; color:#ff6600; text-decoration:underline;}
+.subNav .pic .link .LGray{ display:block; float:right; color:#ff6600; text-decoration:underline}
+
+.subNav .menuCont{ overflow:hidden; zoom:1;}
+.subNav .skBg1{ background:#f9ede7;}
+.subNav .skBg2{ background:#fffbf2;}
+.subNav .skBg3{ background:#fef5f0;}
+.subNav .leftAd{ width:108px;padding:10px 0 15px 0; margin:0 auto;}
+.menuCont .title a{ display:block; height:36px; padding:0 12px; font:14px/36px Simsun; font-weight:700; color:#8e5630; text-decoration:none;}
+.menuCont ul li a{ display:block; padding:0 0 0 25px; height:26px; line-height:26px; text-decoration:none; cursor:pointer; font-family:Simsun;}
+.menuCont ul li a:hover{ background:#f8d7c2; text-decoration:none; color:#333;}
+.menuCont ul li a span{ color:#8e5630;}
+.menuCont .more a{ display:block; padding:0 0 0 37px; height:30px; line-height:30px; overflow:hidden; text-decoration:none;}
+.menuCont .more a.downIcon{ background-position:0 -445px;}
+.menuCont .more a.upIcon{ background-position:0 -475px;}
+.menuCont .more a.downIcon:hover{ background:#f8d7c2 url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/userSprits.png) no-repeat 0 -445px; text-decoration:none; color:#333;}
+.menuCont .more a.upIcon:hover{ background:#f8d7c2 url(http://images1.baihe.com/images/baihe_new/images/mybaihe_v1/userSprits.png) no-repeat 0 -475px; text-decoration:none; color:#333;}
+
+
+
+#baihe_footer{ width:980px; margin:0 auto; background:#fff; overflow:hidden;}
+#baihe_footer ul{ display:block; height:140px; background:#2b262e; padding:5px 0 0; color:#959397; font:12px normal; font-family:Simsun; overflow:hidden;}
+#baihe_footer ul li{ float:left; height:115px; padding:15px 0 0 20px; margin:0 15px 0 20px; line-height:16px; border-left:1px solid #555158; overflow:hidden;}
+#baihe_footer ul li{ display:inline;}
+#baihe_footer ul li a{color:#959397; text-decoration:underline;}
+#baihe_footer ul li span{ display:block; margin:0 0 10px 0; line-height:22px;}
+#baihe_footer ul li .service{ padding:7px 3px 0; line-height:18px;}
+#baihe_footer ul li.noline{ border:0; padding-left:0; margin-right:0}
+#baihe_footer p{ padding:15px 0 10px 0; text-align:center;}
+#baihe_footer p a{ padding:0 5px; text-decoration:none; color:#666; font-size:12px;}
+#baihe_footer .approve { padding:0 0 15px 245px; overflow:hidden; zoom:1;}
+#baihe_footer .approve a{ display:block; float:left; height:42px; padding:2px 15px 4px 48px; line-height:18px;color:#666; font-size:12px; background:url(http://images4.baihe.com/images/baihe_new/images/footerIcon.gif) no-repeat; text-decoration:none; white-space:nowrap; overflow:hidden;}
+#baihe_footer a.Icon1{ background-position:0 0;}
+#baihe_footer a.Icon2{ background-position:0 -48px;}
+#baihe_footer a.Icon3{ background-position:0 -96px;}
+#baihe_footer a.Icon4{ background-position:0 -144px;}
+#baihe_footer a.Icon5{ width:53px; background:url(http://images1.baihe.com/images/baihe_new/images/footerIcon1.gif) no-repeat; }
+#baihe_footer a.Icon6{ padding-left:55px; background-position:0 -192px;}
+

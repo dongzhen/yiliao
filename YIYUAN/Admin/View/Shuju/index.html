@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>代理省份列表</title>
+	<hdjs/>
+    <style type="text/css">
+        #duihao{
+            color: green;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        #cuohao{
+            color:red;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        .zuijin{
+            font-size: 20px;
+            color: black;
+            width: 200px;
+            position: absolute;
+            left: 600px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class='menu_list'>
+    <ul>
+        <li>
+            
+        </li>
+    </ul>
+</div>
+<div class='menu_list'>
+    <ul>
+        <li class="zuijin">
+                数据写入测试
+        </li>
+    </ul>
+</div>
+<table class='table2'>
+    <thead>
+    <tr>
+        <!-- <td class=''>sid</td> -->
+        <td class="">StrCode</td>
+        <td class=''>InsCode</td>
+        <td>Cmd</td>
+        <td>CardCode</td>
+        <td>Data</td>
+        <td class="">EndFlag</td>
+        <td>DataTime</td>
+    </tr>
+    </thead>
+    <tbody>
+    <list from="$data" name="$d">
+        <tr>
+            <!-- <td style="display:none;">{$d.sid}</td> -->
+            <td>{$d.StrCode}</td>
+            <td>{$d.InsCode}</td>
+            <td>{$d.Cmd}</td>
+            <td>{$d.CardCode}</td>
+            <td>{$d.Data}</td>
+            <td>{$d.EndFlag}</td>
+            <td>{$d.DataTime}</td>
+        </tr>
+    </list>
+    </tbody>
+</table>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/js.js"></script>
+<div class='page1'>
+   {$page}
+</div>
+</body>
+</html>

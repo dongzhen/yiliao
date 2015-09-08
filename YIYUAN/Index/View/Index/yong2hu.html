@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <style type="text/css">
+        /*头部开始*/
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #top{
+            height: 30px;
+            width: 100%;
+            background: #67A331;
+        }
+        .top_center{
+            width: 1500px;
+            height: 30px;
+            margin: 0 auto;
+            /*background: yellow;*/
+        }
+        .huanying{
+            width: 300px;
+            height: 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "微软雅黑";
+            text-align: center;
+            float: left;
+            /*background: green;*/
+        }
+        .tuichu{
+            float: right;
+            height: 28px;
+            width: 128px;
+            color: white;
+            border: 2px solid white;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            text-align: center;
+            font-size: 18px;
+            font-family: "微软雅黑";
+            cursor: pointer;
+            /*background: yellow;*/
+        }
+        /*导航块开始*/
+        #daohang{
+            width: 1583px;
+            height: 80px;
+            border: 1px solid #E6E6E6;
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            margin: 0 auto;
+            margin-top: 20px;
+            /*border: 1px solid red;*/
+        }
+        .d_center{
+            width: 1280px;
+            height: 80px;
+            margin: 0 auto;
+            /*background: green;*/
+            position: relative;
+
+        }
+        .logo{
+            width: 180px;
+            height: 80px;
+            position: absolute;
+            top: -10px;
+
+        }
+        .dianhua{
+            width: 1100px;
+            height: 40px;
+            position: absolute;
+            left: 180px;
+            top: 0;
+            /*background:yellow;*/
+            /*border: 1px solid red;*/
+        }
+        .tubiao{
+            /*background: yellow;*/
+            position: absolute;
+            top: -10px;
+        }
+        .dh{
+            width: 400px;
+            height: 40px;
+            /*background: green;*/
+            left: 700px;
+            position: absolute;
+        }
+        .nb{
+            width: 350px;
+            height: 40px;
+            position: absolute;
+            left: 670px;
+            color: #67A331;
+            font-size: 25px;
+            font-family: "微软雅黑";
+            font-weight: 600;
+            text-align: center;
+            line-height: 40px;
+
+        }
+        .fuwu{
+            width: 1100px;
+            height: 40px;
+            position: absolute;
+            left: 180px;
+            top: 40px;
+            line-height: 10px;
+            /*border: 1px solid red;*/
+            /*background: yellow;*/
+        }
+        .fw{
+            list-style: none;
+            position: absolute;
+            width: 600px;
+            height: 40px;
+            left: 650px;
+
+        }
+        .fw a{
+            text-decoration: none; 
+            font-size: 18px;
+            font-family: "微软雅黑"; 
+            color: #423232;          
+        }
+        .fw a:hover{
+            color: red;
+        }
+        .fw li{
+            float: left;
+            margin-left: 20px;
+
+        }
+        /*用户信息界面开始*/
+        #user{
+            width: 1280px;
+            margin: 0 auto;
+            height: 1200px;
+            border: 2px solid #E6E6E6;
+            border-top: none;
+        }
+        .yhxx{
+            width: 180px;
+            height: 260px;
+            border-right: 2px solid #E6E6E6;
+            border-bottom: 2px solid #E6E6E6;
+            /*background: yellow;*/
+            position: relative;
+            background: #AFDFA2;
+        }
+        .xinxi{
+            position: absolute;
+            width: 180px;
+            height: 20px;
+            text-align: center;
+            background: green;
+            font-size: 20px;
+            font-family: "微软雅黑";
+        }
+        .xm{
+            width: 100px;
+            float: left;
+            height: 37px;
+            /*background: yellow;*/
+            font-size: 16px;
+            font-family: "微软雅黑";
+        }
+        .nl{
+            width: 100px;
+            float: left;
+            height: 37px;
+            /*background: yellow; */
+            font-size: 16px;
+            font-family: "微软雅黑";           
+        }
+        .jtzz{
+            width: 100px;
+            float: left;
+            height: 37px;
+            /*background: yellow; */
+            font-size: 16px;
+            font-family: "微软雅黑";           
+        }
+        .xb{
+            width: 100px;
+            float: left;
+            height: 37px;
+            /*background: yellow;*/
+            font-size: 16px;
+            font-family: "微软雅黑";           
+        }
+        .sfz{
+            width: 180px;
+            float: left;
+            height: 60px;
+            /*background: yellow; */
+            position: absolute;
+            top: 200px;
+            left: 0;
+            font-size: 16px;
+            font-family: "微软雅黑";          
+        }
+        .jtzz{
+             width: 180px;
+            float: left;
+            height: 80px;
+            margin-top: 10px;
+            /*background: yellow; */
+            font-size: 16px;
+            font-family: "微软雅黑"; 
+        }
+        /*用户测量数据模块开始*/
+        .today{
+            width: 1100px;
+            /*background: yellow;*/
+            height: 260px;
+            background: #F2F2F2;
+            border-bottom: 2px solid #E6E6E6;
+            position: absolute;
+            top: 130px;
+            left: 335px;
+
+
+        }
+        .td{
+            list-style: none;
+            position: absolute;
+            left: -40px;
+            top: 50px;
+        }
+        .td li{
+            width: 688px;
+            height:30px;
+            color: #423255;
+            font-size: 16px;
+            font-family: "微软雅黑";
+            /*border: 1px solid red;*/
+        }
+        .jrcl{
+            /*text-align: center;*/
+            /*background: yellow;*/
+            position: absolute;
+            left: 188px;
+            top: -50px;
+            width: 500px;
+        }
+        .us_center{
+            width: 1100px;
+            height: 800px;
+            /*background: pink;*/
+            border: 2px solid #E6E6E6;
+            border-right: none;
+            border-bottom: none;
+            position: absolute;
+            left: 335px;
+            margin-top: 100px;
+        }
+        .td_right{
+            width: 535px;
+            height: 260px;
+            border-left: 2px solid #E6E6E6;
+            /*background: yellow;*/
+            position: absolute;
+            left: 560px;
+        }
+        .jkpg{
+            width: 200px;
+            height: 50px;
+            /*background: yellow;*/
+            position: absolute;
+            left: 166px;
+            color: black;
+            font-size: 23px;
+            font-weight: 600;
+            font-family: "微软雅黑";
+            text-align: center;
+            line-height: 50px;
+        }
+        .yuan{
+            width: 120px;
+            height: 120px;
+            background:red ;
+            position: absolute;
+            left: 210px;
+            top: 69px;
+        }
+        .hs{
+            width: 88px;
+            height: 30px;
+            background: red;
+            position: absolute;
+            top:90px;
+            left:400px;
+            color: white;
+            font-size: 20px;
+            font-family: '微软雅黑';
+            font-weight: 500;
+            text-align: center;
+        }
+        .ls{
+            width: 88px;
+            height: 30px;
+            position: absolute;
+            top: 136px;
+            left: 400px;
+            background: green;
+            color: white;
+            font-size: 20px;
+            font-family: '微软雅黑';
+            font-weight: 500;
+            text-align: center;
+        }
+        /*曲线图模块开始*/
+        .clsj{
+            width: 1095px;
+            height: 60px;
+            background: #B2BFCB;
+        }
+        .bodong{
+            width: 200px;
+            height: 60px;
+            margin: 0 auto;
+            color: black;
+            font-size: 22px;
+            line-height: 60px;
+            font-weight: 500;
+            font-family: "微软雅黑";
+        }
+        .xinlv{
+            width: 1095px;
+            height: 126px;
+            /*background: #F2F2F2;;*/
+        }
+        .xueya{
+            width: 1095px;
+            height: 126px;
+            background:#B2BFCB;
+        }
+         .xuezhi{
+            width: 1095px;
+            height: 126px;
+            /*background: yellow;*/
+        }
+        .xueyang{
+            width: 1095px;
+            height: 126px;
+            background: #B2BFCB;
+        }
+        .xinlv{
+            width: 1095px;
+            height: 126px;
+            /*background: yellow;*/
+        }
+
+        .xuetang{
+            width: 1095px;
+            height: 126px;
+            background: #B2BFCB;
+        }
+        .maibo{
+            width: 1095px;
+            height: 126px;
+            /*background: #F2F2F2;*/
+
+
+        }
+        .tiwen{
+            width: 1095px;
+            height: 126px;
+            background: #B2BFCB;
+
+        }
+        </style>
+ 	<!-- <link rel="stylesheet" href="css/denglu.css"> -->
+    <script type="text/javascript" src='js/jquery-1.7.2.min.js'></script>
+    <script type="text/javascript" src="js/jiaru.js"></script>
+    </head>
+    <body>
+    <!-- 头部开始 -->
+        <div id="top">
+            <div class="top_center">
+                <span class="huanying">欢迎您</span>
+                <span class="tuichu"><a href="{|U:'Login/out'}">安全退出</a></span>
+            </div>
+        </div>
+    <!-- 导航块开始 -->
+        <div id="daohang">
+            <div class="d_center">
+                <div class="logo"> 
+                    <img src="image/22.jpg">               
+                </div>
+                <div class="dianhua">
+                    <span class="dh">
+                        <p class="tubiao"><img src="image/dianhua.png"></p>
+                    </span>
+                    <span class="nb">
+                        888888888888
+                    </span>
+                </div>
+                <div class="fuwu">
+                    <ul class="fw">
+                        <li><a href="">首页</a></li>
+                        <li><a href="{|U:'Yonghu/shenqing'}">申请保健医生</a></li>
+                        <li><a href="">申请保健医院</a></li>
+                        <li><a href="">健康信息反馈</a></li>
+                    </ul>
+                </div>       
+            </div>
+        </div>
+    <!-- 用户数据界面开始 -->
+        <div id="user">
+            <!-- 用户信息资料显示开始 -->
+            <!-- 用户今日测量身体数据信息 -->
+            <div class='today'>
+                <ul class="td">
+                    <li class="jrcl">今日身体测量状况（2015年3月16）</li>
+                    <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp心率：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp血压：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp血脂：--</li>
+                    <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp血氧：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp血糖：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp体成分：--</li>
+                    <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp脉搏：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp血尿酸：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp尿成分：--</li>
+                    <li> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp体温：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp血酮体：-- &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp血脂：--</li>
+                </ul>
+            <div class="td_right">
+                <!-- 身体状况评估 -->
+                <div class="jkpg">
+                    健康评估
+                </div>
+                <div class="yuan">
+                    <img src="image/yuanxing.png">
+                </div>
+                <span class="hs">健康</span>
+                <span class="ls">正常</span>
+            </div>
+            </div>
+
+            <!-- 用户测量数据处开始 -->
+            <div class="us_center">
+                <div class="clsj">
+                    <div class="bodong">
+                        测量数据波动曲线图
+                    </div>
+                    <div class="xinlv">
+                        
+                    </div>
+                    <div class="xueya"> 
+                        
+                    </div>
+                    <div class="xuezhi"> 
+                        
+                    </div>
+                    <div class="xueyang"> 
+                        
+                    </div>
+                    <div class="maibo"> 
+                        
+                    </div>
+                    <div class="tiwen"> 
+                        
+                    </div>                                        
+                </div>
+            </div>
+        </div>
+    </body>

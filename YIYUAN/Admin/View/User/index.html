@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>帐号管理列表</title>
+	<hdjs/>
+	<style type="text/css">
+		#duihao{
+			color: green;
+			font-weight: 800;
+			font-size: 12px;
+		}
+		#cuohao{
+			color:red;
+			font-weight: 800;
+			font-size: 12px;
+		}
+        .zuijin{
+            font-size: 20px;
+            color: black;
+            width: 200px;
+            position: absolute;
+            left: 600px;
+            top: 0px;
+        }
+	</style>
+</head>
+<body>
+<div class='menu_list'>
+    <ul>
+        <li>
+            <a href="{|U:'add'}">添加帐号</a>
+        </li>
+    </ul>
+</div>
+<div class='menu_list'>
+    <ul>
+        <li class="zuijin">
+                总代帐号管理
+        </li>
+    </ul>
+</div>
+<table class='table2'>
+    <thead>
+    <tr>
+        <td class='w300'>帐号</td>
+        <td class="w300">密码</td>
+<!--         <td class="w300">联系电话</td>
+        <td class="w300">公司地址</td>
+        <td>登录帐号</td>
+        <td>登录密码</td> -->
+        <td class="w500">操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <list from="$data" name="$d">
+        <tr>
+            <td style="display:none;">{$d.uid}</td>
+            <td>{$d.username}</td>
+<!--             <td>{$d.duser}</td>
+            <td>{$d.dnumber}</td>
+            <td>{$d.ddizhi}</td>
+            <td>{$d.dkey}</td> -->
+            <td>{$d.password}</td>
+            <td>
+                <a href="{|U:'edit',array('uid'=>$d['uid'])}">修改</a> |
+                <a href="{|U:'del',array('uid'=>$d['uid'])}" onclick="return confirm('你确定将该代理的代理资格删除么?');">删除</a> 
+            </td>
+        </tr>
+    </list>
+    </tbody>
+</table>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/js.js"></script>
+<div class='page1'>
+   {$page}
+</div>
+</body>
+</html>

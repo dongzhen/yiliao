@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		*{ padding: 0; margin: 0;}
+		body{ background: #FFF;}
+		#cont_right{ position: absolute; top: 0px; left: 0px; right: 0; bottom: 0; }
+		 .cont_lr{ height: 28px; border-top: 1px #fff solid; border-bottom: 1px #d4d4d4 solid; background: url(__VIEW__/Index/images/navs_bg.png) repeat-x;}
+		 .cont_lr p{ font-weight: 700; color: #555; line-height: 28px; font-size: 12px; padding-left: 10px;}
+		 .contt{ padding: 10px;}
+		table .tds{ width: 90px; font-size: 12px; font-weight: 700; text-align: right; color: #555571; height: 40px;}
+		table .input_text{ height: 30px; line-height: 30px; border: 1px #ccc solid; width: 180px; padding-left: 10px; color: #00052E; background: #F6F6F6;}
+		table .input_texts{ height: 30px; line-height: 30px; border: 1px #ccc solid; width: 80px; padding-left: 10px; color: #00052E; background: #F6F6F6;}
+		table .inputs{ height: 30px; line-height: 30px; border: 1px #ccc solid; width: 120px; padding-left: 10px; color: #00052E; background: #F6F6F6;}
+		table .inputss{ height: 30px; line-height: 30px; border: 1px #ccc solid; width: 50px; padding-left: 10px; color: #00052E; background: #F6F6F6;}
+		table .inputt{ height: 30px; line-height: 30px; border: 1px #ccc solid; width: 450px; padding-left: 10px; color: #00052E; background: #F6F6F6;}
+		table .input_textss{ height: 30px; line-height: 30px; border: 1px #ccc solid; width: 170px; padding-left: 10px; color: #00052E; background: #F6F6F6;}
+		table .sele{ height: 32px; border: 1px #ccc solid; width: 100px; color: #00052E; background: #F6F6F6;}
+		table .textarea{ height: 90px; border: 1px #ccc solid; width: 285px; color: #00052E; background: #F6F6F6; padding-left: 5px; line-height: 24px; margin:5px 0; resize:none; float: left;}
+		table #input1{ border:1px solid #ccc; height: 30px; padding-left: 10px; background: #F6F6F6; width: 107px;}  
+        table #btn1{ width:70px; height:32px; font-size:12px; background: url(__VIEW__/Index/images/login_user.png) repeat-x; border: none; color: #fff; letter-spacing: 1px; border-radius: 3px; padding-left: 10px;} 
+		.sub{ width: 80px; height: 32px; color: #fff; background: url(__VIEW__/Index/images/login_user.png) repeat-x; border: none; border-radius: 2px; font-size: 14px; letter-spacing: 1px; margin:5px 0 5px 80px; font-weight: 700;}
+		table label{ font-size: 12px; height: 24px; line-height: 24px; color: #555571;}
+		table .zhu{ font-size: 12px; color: #ac0000;}
+		table .zhus{ font-size: 12px; color: #ac0000; line-height: 100px;}
+		.contt table td ul li{ margin-top: 5px;}
+		.contt table td ul li a{ cursor: pointer;}
+		.contt table td ul .lists a{ cursor: pointer; width: 50px;}
+		.contt table td ul .lists a span{ width: 20px; float: right; line-height: 21px; height: 21px; display: block; background: url(__VIEW__/Index/images/jia.png) no-repeat;}
+		.contt table td ul .lists a b{ width: 20px; float: right; height: 21px; line-height: 21px; display: block; background: url(__VIEW__/Index/images/jian.png) no-repeat;}
+		.contt table td .attrs .listattr{ background: #fcfcfc; border: 1px #f0f0f0 solid; border-top: 2px #555571 solid;}
+
+		.sub{
+			position: absolute;
+			top: 95%;
+			left: 45%;
+		}
+
+	</style>
+	<script>
+        var goods_gid=0;
+    </script>
+	<hdjs/>
+</head>
+<body>
+<div id="cont_right">
+
+<div class="contt">
+<form action="" method='post' enctype='multipart/form-data'>
+	<div class="tab" style="list-style:none;">
+		    <li style="width：50px;height:30px;">
+		        <a>编辑信息并发送</a>
+		    </li>
+
+	        <div id="content">
+	        	<table border="0">
+	        		<tr>
+	                    <td class="tds">标题：</td>
+	                    <td>
+	                        <input type="text" name="title" class="input_text" />
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td class="tds">备注：</td>
+	                    <td>
+	                        <textarea class="textarea" name="beizhu"></textarea>
+	                    </td>
+	                </tr>
+	                <tr>
+	        			<td class="tds">诊断信息：</td>
+	        			<td>
+	        				<ueditor name='content'/>
+	        			</td>
+        			</tr>
+	        	</table>
+	        </div>
+
+
+	        
+	    </div>
+	</div>
+	<input type="submit" value='发送信息' class='sub' style=" cursor: pointer;">
+</form>
+</div>
+</div>
+<script>
+	//添加上传表单
+	function addUploadForm(){
+		var html='<li class="lists">\
+                            		<input type="file" name="img_original[]"/>\
+                            		&nbsp;&nbsp;<a onclick="delUploadForm(this)"><b></b></a>\
+	        					</li>';
+		$(".contt table td ul").append(html);
+		 
+	}
+	//移除上传表单
+	function delUploadForm(Obj){
+		$(Obj).parent().remove();
+	}
+</script>
+<js file="__CONTROLLER_VIEW__/Js/js.js">
+</body>
+</html>

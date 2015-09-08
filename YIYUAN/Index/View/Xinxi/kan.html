@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>保健医生信息查看</title>
+    <hdjs/>
+    <style type="text/css">
+        #duihao{
+            color: green;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        #cuohao{
+            color:red;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        .zuijin{
+            font-size: 20px;
+            color: black;
+            /*background: yellow;*/
+            position: absolute;
+            left: 600px;
+            top: 0px;
+        }
+        #one{
+            width: 100%;
+        }
+        #one td{
+            width:258px;
+            height: 40px;
+            text-align: center;
+            border-bottom: 1px solid #DBEAF9;
+        }
+        #zhuti{
+        	width: 800px;
+        	height: 400px;
+        	margin: 0 auto;
+            font-size: 23px;
+            font-family: "微软雅黑";
+            font-weight: 500;
+        	/*border:1px solid red;*/
+        	background: #F1F1F1;
+        }
+        #title{
+        	width: 800px;
+        	height: 60px;
+        	border-bottom: 1px solid white;
+        	text-align: center;
+        	font-family: "微软雅黑";
+        	font-size: 35px;
+        	line-height: 60px;
+        	/*background: white;*/
+        }
+        #beizhu{
+        	width: 400px;
+        	height: 60px;
+            margin: 0 auto;
+        	/*border-bottom: 1px solid black;*/
+        	/*background: white;*/
+            line-height: 60px;
+            text-align: center;
+        }
+        #content{
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            font-family: "微软雅黑";
+            font-size: 23px;
+            font-weight: 500;
+            /*background: yellow;*/
+        }
+    </style>
+</head>
+<body>
+<div class='
+menu_list'>
+    <ul>
+        <li>
+                
+                <a href="{|U:'Xinxi/index'}" target="_self">
+                    [返回信息列表]
+                </a>
+        </li>
+                <li>
+                
+
+        </li>
+    </ul>
+</div>
+<div class='menu_list'>
+    <ul>
+        <li class="zuijin">
+                保健医生信息
+        </li>
+    </ul>
+</div>
+<table id="one">
+    <thead>
+    <tr>
+
+    </tr>
+    </thead>
+    <tbody>
+<div id="zhuti">
+	<div id="title">{$data.title}</div>
+	<div id="beizhu">
+		<span >
+			备注：{$data.beizhu}
+		</span>
+
+	</div>
+    <div id="content">
+        {$data.content}
+        
+    </div>
+   
+	
+</div>
+    </tbody>
+</table>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/js.js"></script>
+<div class='page1'>
+   {$page}
+</div>
+<div id="beizhu">
+	
+</div>
+</body>
+</html>

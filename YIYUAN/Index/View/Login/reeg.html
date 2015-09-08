@@ -1,0 +1,149 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>注册页面</title>
+	<hdjs/>
+	<script type="text/javascript" src="__CONTROLLER_VIEW__/js/jquery.js"></script>
+	<style type="text/css">
+	 	body{
+	 		background: #E3E4E6;
+
+	 	}
+		#zhuce{
+			width: 900px;
+			border: 2px solid #DBEAF9;
+			height: 1300px;
+			margin: 0 auto;
+			background: white;
+		}
+		.title{
+			width: 500px;
+			height: 60px;
+			margin: 0 auto;
+			margin-top: 30px;
+			background: #E3E4E6;
+			text-align: center;
+			line-height: 60px;
+			font-size: 30px;
+			font-family: "微软雅黑";
+			color: #7D7D7D;
+		}
+		.center{
+			width: 600px;
+			height: 700px;
+			margin: 0 auto;
+			margin-top: 50px;
+			/*background: pink;*/
+		}
+		.demo{
+			width:420px;
+			margin:40px auto 0 auto;
+			min-height:250px;
+			}
+		.demo p{
+			line-height:42px; 
+			font-size:20px;
+		}
+		.zcb{
+			list-style: none;
+			height: 40px;
+			width: 600px;
+			height: 700px;
+			color: #7D7D7D;
+			padding: 0;
+		}
+	 	.zcb li{
+	 		width: 600px;
+	 		height:60px;
+	 		/*background: yellow;*/
+	 		text-align: center;
+	 		line-height: 40px;
+	 	}
+	 	.ac{
+	 		height: 25px;
+	 	}
+	 	.tj{
+	 		background: #2980EE;
+	 		width: 100px;
+	 		height: 40px;
+	 		border: none;
+	 		border-radius: 4%;
+	 		cursor: pointer;
+	 		font-size: 23px;
+	 		color: white;
+	 	}
+	</style>
+</head>
+<body>
+ 	<div id="zhuce">
+ 		<div class="title">
+ 			用户注册
+ 		</div>
+ 		<div class="center">
+ 		<form action="" method="post">
+ 			<ul class="zcb">
+ 			 	<li>卡号：
+ 					<input type="text" name="kahao">
+ 				</li>
+ 				<li>
+ 					密码：<input type="text" name="password">
+ 				</li>
+ 				<li>
+ 					姓名：<input type="text" class="ac" name="xingming">
+ 				</li>
+ 				<li>性别：
+ 					<input type="radio" name="xingbie" value="男">男&nbsp&nbsp
+ 					<input type="radio" name="xingbie" value="女">女
+ 				</li>
+ 				<li>
+  					<label>出生日期：</label>
+       				<select class="sel_year" rel="2015" name="nian"></select>年
+        			<select class="sel_month" rel="1" name="yue"></select>月
+        			<select class="sel_day" rel="1" name="ri"></select>日
+ 				</li>
+ 				<li>
+ 					电话号码：<input type="text" class="ac" name="number">
+ 				</li>
+ 				<li>
+ 					身份证号：<input type="text" class="ac" name="shenfenzheng">
+ 				</li>
+ 				<li>
+ 					&nbsp&nbsp&nbsp&nbsp身高&nbsp:<input type="text" class="ac" name="shengao">
+ 				</li>
+ 				<li>
+ 					&nbsp&nbsp&nbsp&nbsp民族：<input type="text" class="ac" name="minzu">
+ 				</li>
+ 				<li>
+ 					血型：
+ 						<input type="radio" value='A' name="xuexing">A&nbsp&nbsp
+ 						<input type="radio" value="B" name="xuexing">B&nbsp&nbsp
+ 						<input type="radio" value='C' name="xuexing">AB&nbsp&nbsp
+ 						<input type="radio" value='AB' name="xuexing">O&nbsp&nbsp
+  				</li>
+<!--   				<li>
+  					<input type="text" name="codes" class="inputs" placeholder="请输入验证码">
+					<img src="{|U:'code'}" onclick="this.src='{|U:'code'}&'+Math.random()" class="imgs">
+  				</li> -->
+ 				<li>
+ 					<input type="submit" class='tj' value='注册'/>
+ 				</li>
+ 				</form>
+ 			</ul>
+ 			
+ 		</div>
+ 		
+ 	</div>
+</body>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/birthday.js"></script>
+<script>  
+$(function () {
+	$.ms_DatePicker({
+            YearSelector: ".sel_year",
+            MonthSelector: ".sel_month",
+            DaySelector: ".sel_day"
+    });
+	$.ms_DatePicker();
+}); 
+</script> 
+</html>

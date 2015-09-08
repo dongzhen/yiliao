@@ -1,0 +1,125 @@
+label { float:left; line-height:24px; color:#666; padding:0 5px;}
+
+input { height:24px; padding:0 7px; font-size:13px; color:#666; border:1px solid #ddd; }
+
+/* ------------- * Radios * ------------- */
+.radioWrapper{float: left;display:block;margin:5px 4px 0 0;}
+.radio {background: transparent url(http://images6.baihe.com/icon/radio_01.gif) no-repeat left 0; height:15px; width:14px;display:block;/*display: -moz-inline-block;*/}
+.radioChecked {background: transparent url(http://images6.baihe.com/icon/radio_02.gif) no-repeat left 0; height:15px;width:14px;display:block;/*display: -moz-inline-block;*/}
+
+/* ------------- * Checkboxes * ------------- */
+span.checkboxWrapper{display:block;float:left;margin-top:5px;}
+a.checkbox { background:url(http://images6.baihe.com/icon/inp_01.gif) no-repeat left top; height: 14px;width: 14px;display:block;/*display: -moz-inline-block;*/}
+
+/* ------------- * Checked - Used for both Radio and Checkbox * ------------- */
+a.checkboxChecked {background:url(http://images6.baihe.com/icon/inp_02.gif) no-repeat left top;}
+
+/* ------------- * Selects * ------------- */
+.selectWrapper { position:relative; float:left; height:24px; margin-right:5px; border:1px solid #ddd; background:#fff;}
+.selectWrapper div span {float:none; position:absolute;  white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis; padding-left:5px; line-height:24px; color:#666; overflow: hidden;cursor:pointer; /*border: 1px solid #CCCCCC;*/ /*  border-right: none;*/}
+
+.selectWrapper  a.jqTransformSelectOpen {display: block;position: absolute;right: 0px;width:31px; height:23px;background: url(http://images6.baihe.com/icon/droparrow.gif) no-repeat right center;}
+.selectWrapper ul {position: absolute; top:24px; left:-1px; width:29px; border:1px solid #ddd; display: none; margin: 0px; padding: 0px; height:250px;overflow:auto; background:#fff; overflow-y: auto;z-index:10;}
+.selectWrapper ul li{ line-height: 24px;}
+.selectWrapper ul a {display: block; padding:0 0 0 5px;text-decoration: none;color:#666; background-color: #FFF;}
+.selectWrapper ul a.selected { color: #f60;}
+.selectWrapper ul a:hover, .selectWrapper ul a.selected:hover {color: #f60;}
+
+/* ------------- * Hidden - used to hide the original form elements * ------------- */
+.jqTransformHidden {display: none;}
+
+/*---- 城市优化  ----*/
+.provinceCity{width:306px;position:absolute;background:#FFF;display:none}
+.provinceCity .tabs{height:28px;border-bottom:2px solid #323055;}
+.provinceCity .tabs li{height:28px;float:left;width:76px}
+.provinceCity .tabs li a,.provinceCity .tabs li a:visited{display:block;height:28px;color:#bdbdbd;line-height:28px;text-align:center;text-decoration:none;float:left;width:76px;}
+.provinceCity .tabs li a.current,.provinceCity .tabs li a.current:visited,.provinceCityAll .tabs li a.current,.provinceCity .tabs li a.current:visited {color:#333}
+.provinceCity .con {height:110px;border:1px solid #d6d6d6;border-top:none;padding:10px}
+
+.provinceCity .province .list{float:left;width:225px;margin:auto}
+.provinceCity .province .list li,.provinceCity .city .list li{float:left;width:75px;text-align:center;overflow:hidden;padding:3px 0}
+.provinceCity .city {float:left;width:284px;}
+.provinceCity .county li,.provinceCity .hotCity li,.provinceCity .city li{float:left;width:69px;text-align:center;overflow:hidden;padding:3px 0}
+
+.provinceCity .county{float:left;width:284px;margin:auto}
+
+.provinceCity {z-index:2}
+.provinceCity .city .list{float:left;width:225px;}
+.provinceCity .hotCity{float:left;width:284px;}
+
+.provinceCity .county .list{float:left;width:225px;margin:auto}
+.provinceCity .county .list li{float:left;width:75px;text-align:center;overflow:hidden;padding:3px 0}
+.provinceCity .county .list li a input,.provinceCity .province .list li a input:visited{color:#666;}
+
+.provinceCityAll { width:306px;position:absolute;background:#FFF; display:none}
+.provinceCityAll .tabs{height:28px;border-bottom:2px solid #323055;}
+.provinceCityAll .tabs li{height:28px;float:left;width:76px; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis; }
+.provinceCityAll .tabs li a,.provinceCity .tabs li a:visited{display:block;height:28px;color:#666;line-height:28px;text-align:center;text-decoration:none;float:left;width:76px;}
+.provinceCityAll .con{ height:120px; border:1px solid #ddd; padding:8px 0; zoom:1; }
+
+.provinceCityAll .provinceAll,.provinceCityAll .cityAll { height:120px; overflow-y:auto; overflow-x:hidden; }
+.provinceCityAll .provinceAll .list,.provinceCityAll .cityAll .list, {float:left; width:285px;}
+.provinceCityAll .provinceAll .list li,.provinceCityAll .cityAll .list li,.provinceCityAll .cityAll li {float:left;width:64px; overflow:hidden; padding:3px 0 3px 7px;}
+
+.provinceCityAll .provinceAll .list li a,.provinceCityAll .provinceAll .list li a:visited,.provinceCityAll .cityAll li a,.provinceCityAll .cityAll li a:visited,.provinceCityAll .hotCityAll li a { display:block; width:64px; color:#666; white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis;}
+
+.provinceCityAll .countyAll { float:left; padding:0 0 0 9px; height:120px; overflow-y:auto; overflow-x:hidden;}
+.provinceCityAll .countyAll li,.provinceCityAll .hotCityAll li { float:left;width:69px; overflow:hidden; padding:3px 0;  white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+
+.provinceCityAll {z-index:30}
+
+.provinceCityAll .hotCityAll {float:left; padding:0 0 0 4px; height:120px; overflow-y:auto; overflow-x:hidden;}
+.provinceCityAll .hotCityAll li a { width:70px;}
+.provinceCityAll .hotCityAll li a input,.provinceCityAll .hotCityAll li a:visited{color:#666; padding:0px}
+
+.provinceCityAll .countyAll .list {float:left;}
+.provinceCityAll .countyAll .list li{float:left;width:69px; overflow:hidden;padding:3px 0;  white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+
+
+
+/*---- 学校优化  ----*/
+.universityCity {width:306px;position:absolute;background:#FFF;display:none}
+.universityCity .con {height:110px;border:1px solid #d6d6d6;border-top:none;padding:10px}
+
+.universityCity .province .list{float:left;width:225px;margin:auto}
+.universityCity .province .list li,.universityCity .city .list li{float:left;width:75px;text-align:center;overflow:hidden;padding:3px 0}
+.universityCity .city {float:left;width:284px;}
+.universityCity .county li,.universityCity .hotCity li,.universityCity .city li{float:left;width:69px;text-align:center;overflow:hidden;padding:3px 0}
+
+.universityCity .county{float:left;width:284px;margin:auto}
+
+.universityCity {z-index:2}
+.universityCity .city .list{float:left;width:225px;}
+.universityCity .hotCity{float:left;width:284px;}
+
+.universityCity .county .list{float:left;width:225px;margin:auto}
+.universityCity .county .list li{float:left;width:75px;text-align:center;overflow:hidden;padding:3px 0}
+.universityCity .county .list li a input,.universityCity .province .list li a input:visited{color:#666;}
+
+.universityCity { width:306px;position:absolute;background:#FFF; display:none}
+.universityCity .tabs{height:28px;border-bottom:2px solid #323055;}
+.universityCity .tabs li{height:28px;float:left;width:76px; white-space:nowrap; word-break:keep-all; text-overflow:ellipsis; }
+.universityCity .tabs li a,.universityCity .tabs li a:visited{display:block;height:28px;color:#666;line-height:28px;text-align:center;text-decoration:none;float:left;width:76px;}
+.universityCity .con{ height:120px; border:1px solid #ddd; padding:8px 0; zoom:1; }
+
+.universityCity .universityCityAll,.universityCity .universityAll { height:120px; overflow-y:auto; overflow-x:hidden; }
+.universityCity .universityCityAll .list,.universityCity .universityAll .list {float:left; width:285px;}
+.universityCity .universityCityAll .list li {float:left;width:64px; overflow:hidden; padding:3px 0 3px 7px;}
+
+.universityCity .universityCityAll .list li a,.universityCity .universityCityAll .list li a:visited,.universityCity .hotCityAll li a { display:block; width:64px; color:#666; white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis;}
+
+.provinceCity .province .list li a.current,.provinceCity .province .list li a.current:visited,.provinceCity .city li a.current,.provinceCity .city li a.current:visited,.provinceCity .county li a.current,.provinceCity .city li a.current:visited,.provinceCity .city .list li a input.current,.provinceCity .city .list li a input.current:visited,.provinceCity .hotCity li a input.current,.provinceCity .hotCity li a input.current:visited,.provinceCity .county .list li a input.current,.provinceCity .province .list li a input.current:visited,.universityCity .universityCityAll .list li a.current,.universityCity .universityCityAll .list li a.current:visited,.universityCity .universityAll li a.current,.universityCity .universityAll li a.current:visited,.universityCity .countyAll li a.current,.universityCity .universityAll li a.current:visited,.universityCity .universityAll .list li a input.current,.universityCity .universityAll .list li a input.current:visited,.universityCity .hotCityAll li a input.current,.universityCity .hotCityAll li a input.current:visited,.universityCity .countyAll .list li a input.current,.universityCity .universityCityAll .list li a input.current:visited {color:#ff6c00}
+
+.universityCity .countyAll { float:left; padding:0 0 0 9px; height:120px; overflow-y:auto; overflow-x:hidden;}
+.universityCity .countyAll li,.universityCity .hotCityAll li { float:left;width:69px; overflow:hidden; padding:3px 0;  white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}
+.universityCity .universityAll li { width:260px; padding:3px 0 3px 7px; overflow:hidden;}
+.universityCity .universityAll li a { width:260px; color:#666; white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis;}
+.universityCity .universityCityAll li a:hover,.universityCity .universityCityAll li a.current,.universityCity .universityAll li a:hover,.universityCity .universityAll li a.current,.provinceCityAll .provinceAll li a:hover,.provinceCityAll .provinceAll li a.current,.provinceCityAll .cityAll li a:hover,.provinceCityAll .cityAll li a.current,.provinceCityAll .hotCityAll li a:hover input { color:#f60;}
+.universityCity {z-index:30}
+
+.universityCity .hotCityAll {float:left; padding:0 0 0 4px; height:120px; overflow-y:auto; overflow-x:hidden;}
+.universityCity .hotCityAll li a { width:70px;}
+.universityCity .hotCityAll li a input,.universityCity .hotCityAll li a:visited{color:#666; padding:0px}
+
+.universityCity .countyAll .list {float:left;}
+.universityCity .countyAll .list li{float:left;width:69px; overflow:hidden;padding:3px 0;  white-space:nowrap; word-break:keep-all; text-overflow:ellipsis;}

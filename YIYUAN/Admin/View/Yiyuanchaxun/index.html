@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代理省份列表</title>
+    <hdjs/>
+    <style type="text/css">
+        #duihao{
+            color: green;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        #cuohao{
+            color:red;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        .zuijin{
+            font-size: 20px;
+            color: black;
+            width: 200px;
+            position: absolute;
+            left: 600px;
+            top: 54px;
+        }
+    </style>
+</head>
+<body>
+<!-- <div class='menu_list'>
+    <ul>
+        <li>
+            <a href="{|U:'add'}">添加省代理</a>
+        </li>
+        <li>
+            <a href="{|U:'chakan'}">查看省份代理</a>  
+        </li>
+    </ul>
+</div> -->
+<div class='menu_list'>
+    <ul>
+        <li class="zuijin">
+               代理医院信息
+        </li>
+    </ul>
+</div>
+<div class='title-header' class="h100">查找条件</div>
+            <table class='table1 hd-form'>
+
+                <tr>
+                    <th>省份</th>
+                    <form action="" method='post'>
+                    <td>
+                    
+                        <select name="pid" id="">
+                            <option value="0">选择省份</option>
+                            <list from='$sf' name='$s'>
+                                <option value="{$s.pid}"><a href="">{$s.sname}</a></option>
+                            </list>
+                        </select>
+                        <input type="submit" class='hd-success' value='查找'/>
+                    </td>
+                    <form/>
+                </tr>             
+            </table>
+
+<table class='table2'>
+    <thead>
+    <tr>
+        <td class='w100'>医院名称</td>
+        <td class="w100">其省代理</td>
+        <td class='w40'>省代理负责人</td>
+        <td class="w200">联系电话</td>
+        <td class="w300">公司地址</td>
+        <td>医院管理登录帐号</td>
+        <td>医院管理登录密码</td>
+        <td class="200w">操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <list from="$data" name="$d">
+        <tr>
+            <td style="display:none;">{$d.did}</td>
+            <td>{$d.sname}</td>
+            <td>{$d.dname}</td>
+            <td>{$d.duser}</td>
+            <td>{$d.dnumber}</td>
+            <td>{$d.ddizhi}</td>
+            <td>{$d.dkey}</td>
+            <td>{$d.dpassword}</td>
+            <td>
+                <a href="{|U:'edit',array('did'=>$d['did'])}">编辑</a> |
+                <a href="{|U:'del',array('did'=>$d['did'])}" onclick="return confirm('你确定将该代理的代理资格删除么?');">取消代理资格</a> |
+                <a href="{|U:'Product/manage',array('goods_gid'=>$d['gid'])}">查看其管理医院</a>
+            </td>
+        </tr>
+    </list>
+    </tbody>
+</table>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/js.js"></script>
+<div class='page1'>
+   {$page}
+</div>
+</body>
+</html>

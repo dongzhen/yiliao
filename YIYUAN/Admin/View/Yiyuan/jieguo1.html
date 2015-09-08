@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>您所要查看对应地区的保健医生</title>
+    <hdjs/>
+    <style type="text/css">
+        #duihao{
+            color: green;
+            font-weight: 800;
+            font-size: 12px;
+        }
+        #cuohao{
+            color:red;
+            font-weight: 800;
+            font-size: 12px;
+        }
+    </style>
+    <js file="__CONTROLLER_VIEW__/Js/js.js"/>
+    <script src="__CONTROLLER_VIEW__/js/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="__CONTROLLER_VIEW__/js/Area.js" type="text/javascript"></script>
+<script src="__CONTROLLER_VIEW__/js/AreaData_min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function (){
+    initComplexArea('seachprov', 'seachcity', 'seachdistrict', area_array, sub_array, '44', '0', '0');
+});
+
+//得到地区码
+function getAreaID(){
+    var area = 0;          
+    if($("#seachdistrict").val() != "0"){
+        area = $("#seachdistrict").val();                
+    }else if ($("#seachcity").val() != "0"){
+        area = $("#seachcity").val();
+    }else{
+        area = $("#seachprov").val();
+    }
+    return area;
+}
+
+function showAreaID() {
+    //地区码
+    var areaID = getAreaID();
+    //地区名
+    var areaName = getAreaNamebyID(areaID) ;
+    alert("您选择的地区码：" + areaID + "      地区名：" + areaName);            
+}
+
+//根据地区码查询地区名
+function getAreaNamebyID(areaID){
+    var areaName = "";
+    if(areaID.length == 2){
+        areaName = area_array[areaID];
+    }else if(areaID.length == 4){
+        var index1 = areaID.substring(0, 2);
+        areaName = area_array[index1] + " " + sub_array[index1][areaID];
+    }else if(areaID.length == 6){
+        var index1 = areaID.substring(0, 2);
+        var index2 = areaID.substring(0, 4);
+        areaName = area_array[index1] + " " + sub_array[index1][index2] + " " + sub_arr[index2][areaID];
+    }
+    return areaName;
+}
+</script>
+</head>
+<body>
+<div class='menu_list'>
+    <ul>
+        <li>
+            <a href="{|U:'add'}">添加保健医生</a>
+        </li>
+        <li>
+            <a href="{|U:'chakan'}">查看保健医生</a>
+        </li>
+    </ul>
+</div>
+
+            <div class='title-header' class="h100">查找条件</div>
+            <table class='table1 hd-form'>
+
+                <tr>
+                    <th>省份</th>
+                    <form action="" method='post'>
+                    <td>
+                    
+                        省：<select id="seachprov" name="shengname" onChange="changeComplexProvince(this.value, sub_array, 'seachcity', 'seachdistrict');"></select>
+                        市：<select id="seachcity" name="shiname" onChange="changeCity(this.value,'seachdistrict','seachdistrict');"></select>
+
+                        区：<span id="seachdistrict_div"><select id="seachdistrict" name="quname"></select>
+                        
+                    </td>
+                    <td>
+                     <input type="submit" class='hd-success' value='查找'/>                       
+                    </td>
+
+                    <form/>
+
+                </tr>             
+            </table>
+
+<table class='table2'>
+    <thead>
+    <tr>
+        <td class=''>医院名称</td>
+        <td class="">医院地址</td>
+        <td class=''>医院服务热线</td>
+        <td class="">后台登录帐号</td>
+        <td class="">后台登录密码</td>
+        <td class="">操作</td>
+    </tr>
+    </thead>
+    <tbody>
+    <list from="$yy" name="$y">
+        <tr>
+            <td style="display:none;">{$y.nid}</td>
+            <td>{$y.yishengname}</td>
+            <td>{$y.keshi}</td>
+            <td>{$y.yishengnumber}</td>
+            <td>{$y.yiyuanname}</td>
+            <td>
+                <a href="{|U:'edit',array('nid'=>$y['nid'])}">编辑</a> |
+                <a href="{|U:'del',array('nid'=>$y['nid'])}" onclick="return confirm('你确定将该代理的代理资格删除么?');">解除合作</a> |
+                <a href="">查看其管理用户</a>
+            </td>
+        </tr>
+    </list>
+    </tbody>
+</table>
+<script type="text/javascript" src="__CONTROLLER_VIEW__/js/js.js"></script>
+<div class='page1'>
+   {$page}
+</div>
+</body>
+</html>

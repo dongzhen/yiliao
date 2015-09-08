@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>保健医生申请处理</title>
+    <hdjs/>
+    <style type="text/css">
+        #out{
+            width: 800px;
+            height: 800px;
+            background:#E2DDDD;
+            margin: 0 auto;
+            /*border: 1px solid red;*/
+        }
+        .one{
+            width: 100%;
+            height: 10%;
+            border-bottom: 2px solid #FAE480;
+            line-height: 80px;
+            text-align: center;
+            font-family: "微软雅黑";
+            font-size: 40px;
+        }
+        .two{
+            width: 100%;
+            height: 90%;
+            position: relative;
+        }
+        .img{
+            position: absolute;
+            width: 108px;
+            height: 137px;
+            left: 71%;
+            /*background: white;*/
+        }
+        .three{
+            width: 70%;
+            height: 90%;
+            background: white;
+            margin: 0 auto;
+        }
+        li{
+            font-family: "微软雅黑";
+            /*text-align: center;*/
+            font-size: 18px;
+            height: 80px;
+            line-height: 80px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="out">
+    
+        <div class="one">
+            申请保健医生用户信息
+        </div>
+        <div class="two">
+            <div class="three">
+                <div class="img">
+                    <img src="__ROOT__/{$data.yy_img}" alt="">
+                </div> 
+                <ul> 
+                    <li>医院名称：{$data.yy_name}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp医院等级：{$data.yy_dengji}</li>
+                    <li>申请人姓名：{$data.yy_shenqingren}&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp民族：{$data.ys_minzu}</li>
+                    <li>医院类型:{$data.yy_leixing}</li>
+                    <!-- <li>医院担任职位：{$data.ys_zhiwei}</li> -->
+                    <li>联系电话：{$data.yy_number}</li>
+                    <!-- <li>单位固定电话：{$data.ys_guhua}</li> -->
+
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>后台管理中心</title>
+        <hdjs/>
+        <js file="__CONTROLLER_VIEW__/js/menu.js"/>
+        <js file="__CONTROLLER_VIEW__/js/quick_menu.js"/>
+        <css file="__CONTROLLER_VIEW__/css/css.css"/>
+        <css file="__CONTROLLER_VIEW__/css/quick_menu.css"/>
+        <base target="iframe">
+        <style type="text/css">
+            .guanli{
+                height: 60px;
+                /*color: green;*/
+                font-size: 20px;
+                font-family: "微软雅黑";
+            }
+            .biaozhi{
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 23px;
+                font-family: "微软雅黑";
+            }
+            .biaozhi:hover{
+                background: #5AA020;
+            }
+            #top{
+                background: #FF8000;
+                /*height: 80px;*/
+            }
+            #zuishang{
+                font-family: "微软雅黑";
+                font-size: 18px;
+                color: white;
+            }
+            #tuichu{
+                color: black;
+                font-family: "微软雅黑";
+                font-size: 18px;
+                height: 40px;
+                line-height: 10px;
+                position: absolute;
+                left: 80%;
+                top: 15px;
+            }
+            #one{
+                border: 1px solid #D3D1D1;
+                border-top: none;
+                font-family: "微软雅黑";
+                font-size: 20px;
+                width: 120px;
+                height: 56px;
+                line-height: 56px;
+            }
+            #one:hover{
+                background: #FF8000;
+            }
+            #one a:hover{
+                background: #FF8000;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav" id="top">
+            <!--头部左侧导航-->
+            <div class="top_menu" id="zuishang" style="height：30px;line-height:40px;">
+                    中国保健大夫后台管理中心
+            </div>
+            <!--头部左侧导航-->
+            <!--头部右侧导航-->
+            <div class="r_menu">
+                
+                <a href="{|U:'Login/out'}" target="_self" id="tuichu">
+                    [安全退出]
+                </a>
+            </div>
+            <!--头部右侧导航-->
+        </div>
+        <!--左侧导航-->
+        <div class="main">
+            <!--主体左侧导航-->
+            <div class="left_menu">
+                <dl>
+                    <dt ><span class="guanli">功能管理</span></dt>
+                    <if value="$_SESSION['user']['quanxian'] eq 1">
+                    <dd id="one">
+                        <a href="{|U:'yonghu/chuxian'}" class="biaozhi">用户管理</a>
+                    </dd>
+                    <dd id="one">
+                        <a href="{|U:'Yisheng/index'}" class="biaozhi">保健医生管理</a>
+                    </dd>
+
+                    <dd id="one">
+                        <a href="{|U:'Yiyuan/index'}" class="biaozhi">保健医院管理</a>
+                    </dd>
+                    <dd id="one">
+                        <a href="{|U:'Shuju/index'}" class="biaozhi">数据写入测试</a>
+                    </dd>
+                    <dd id="one">
+                        <a href="{|U:'Zhuanhuan/index'}" class="biaozhi">数据转换测试</a>
+                    </dd>
+                     </if>
+                    <dd id="one">
+                        <a href="{|U:'User/index'}" class="biaozhi">后台账号管理</a>
+                    </dd>
+                    <dd id="one">
+                        <a href="{|U:'Yssq/index'}" class="biaozhi">保健医生申请</a>
+                    </dd>
+                    <dd id="one">
+                        <a href="{|U:'Yysq/index'}" class="biaozhi">保健医院申请</a>
+                    </dd>
+                    <dd id="one">
+                        <a href="{|U:'Qingqiu/index'}" class="biaozhi">会员申请保健医生</a>
+                    </dd>
+                    <dd id="one">
+                        <a href="{|U:'Qingqiua/index'}" class="biaozhi">会员申请保健医院</a>
+                    </dd>
+
+
+                </dl>
+            </div>
+            <!--主体左侧导航-->
+            <!--内容显示区域-->
+            <div class="top_content">
+                <iframe src="__CONTROLLER_VIEW__/welcome.html" nid="0" scrolling="auto" frameborder="0" name='iframe'
+                style="height: 100%;width: 100%;"></iframe>
+            </div>
+            <!--内容显示区域-->
+        </div>  
+    </body>
+</html>
